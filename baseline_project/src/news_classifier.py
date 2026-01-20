@@ -33,21 +33,21 @@ class NewsClassifier:
     DESIGN DECISIONS :
     
     1. Topic Classification : Zero-shot vs Fine-tuned?
-       → Choix : Zero-shot (pas besoin données entraînement)
-       → Avantage : Rapide, flexible sur labels
-       → Limitation : Accuracy inférieure à fine-tuned
+        → Choix : Zero-shot (pas besoin données entraînement)
+        → Avantage : Rapide, flexible sur labels
+        → Limitation : Accuracy inférieure à fine-tuned
     
     2. Modèle multilingue : distilbert-base-multilingual-uncased
-       → Support français + anglais + vitesse
-       → Alternative : roberta (meilleur accuracy, plus lent)
+        → Support français + anglais + vitesse
+        → Alternative : roberta (meilleur accuracy, plus lent)
     
     3. Duplicate detection : Cosine similarity vs Semantic?
-       → Choix : TF-IDF cosine (fast, transparent)
-       → Alternative : Embeddings (better but slower)
+        → Choix : TF-IDF cosine (fast, transparent)
+        → Alternative : Embeddings (better but slower)
     
     4. Seuil similarité : 0.85
-       → Validation : Tester manuellement sur 20 paires
-       → Justification : Équilibre false positives/negatives
+        → Validation : Tester manuellement sur 20 paires
+        → Justification : Équilibre false positives/negatives
     """
     
     def __init__(self, config: Dict):
