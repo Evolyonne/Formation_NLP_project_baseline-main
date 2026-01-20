@@ -1,59 +1,59 @@
 ===========================================================================
 📰 VEILLE AUTOMATIQUE : NLP & Python
-Généré le 20 January 2026 à 11:14
+Généré le 20 January 2026 à 11:55
 ===========================================================================
 
 📊 RÉSUMÉ EXÉCUTIF
 ---------------------------------------------------------------------------
-Articles collectés : 63
-Articles uniques : 62 (dédupli rate: 1.6%)
+Articles collectés : 66
+Articles uniques : 65 (dédupli rate: 1.5%)
 
 🔥 TRENDING TOPICS (Sujets du moment)
 ---------------------------------------------------------------------------
 
 1. UNKNOWN
-   Articles: 62
+   Articles: 65
    Sentiment dominant: Neutre
    Exemples:
-     • Giving University Exams in the Age of Chatbots
+     • Linux kernel framework for PCIe device emulation, 
+     • UK consulting on bringing in social media ban for 
      • The Overcomplexity of the Shadcn Radio Button
-     • Level S4 solar radiation event
 
 
 ✨ ARTICLES À NE PAS MANQUER
 ---------------------------------------------------------------------------
 
-📌 1. Giving University Exams in the Age of Chatbots
-   Source: HackerNews
-   URL: https://ploum.net/2026-01-19-exam-with-chatbots.html
-   Niveau: Unknown
-   Confiance: 0.0%
-   Sentiment: Neutre
-
-📌 2. The Overcomplexity of the Shadcn Radio Button
-   Source: HackerNews
-   URL: https://paulmakeswebsites.com/writing/shadcn-radio-button/
-   Niveau: Unknown
-   Confiance: 0.0%
-   Sentiment: Neutre
-
-📌 3. Level S4 solar radiation event
-   Source: HackerNews
-   URL: https://www.swpc.noaa.gov/news/g4-severe-geomagnetic-storm-levels-reached-19-jan-2026
-   Niveau: Unknown
-   Confiance: 0.0%
-   Sentiment: Neutre
-
-📌 4. Linux kernel framework for PCIe device emulation, in userspace
+📌 1. Linux kernel framework for PCIe device emulation, in userspace
    Source: HackerNews
    URL: https://github.com/cakehonolulu/pciem
    Niveau: Unknown
    Confiance: 0.0%
    Sentiment: Neutre
 
-📌 5. Reticulum, a secure and anonymous mesh networking stack
+📌 2. UK consulting on bringing in social media ban for under 16s
    Source: HackerNews
-   URL: https://github.com/markqvist/Reticulum
+   URL: https://www.bbc.com/news/articles/cgm4xpyxp7lo
+   Niveau: Unknown
+   Confiance: 0.0%
+   Sentiment: Neutre
+
+📌 3. The Overcomplexity of the Shadcn Radio Button
+   Source: HackerNews
+   URL: https://paulmakeswebsites.com/writing/shadcn-radio-button/
+   Niveau: Unknown
+   Confiance: 0.0%
+   Sentiment: Neutre
+
+📌 4. Level S4 solar radiation event
+   Source: HackerNews
+   URL: https://www.swpc.noaa.gov/news/g4-severe-geomagnetic-storm-levels-reached-19-jan-2026
+   Niveau: Unknown
+   Confiance: 0.0%
+   Sentiment: Neutre
+
+📌 5. Increasing the performance of WebAssembly Text Format parser by 350%
+   Source: HackerNews
+   URL: https://blog.gplane.win/posts/improve-wat-parser-perf.html
    Niveau: Unknown
    Confiance: 0.0%
    Sentiment: Neutre
@@ -62,25 +62,25 @@ Articles uniques : 62 (dédupli rate: 1.6%)
 📊 ANALYSE THÉMATIQUE
 ---------------------------------------------------------------------------
 
-Top Keywords (365 tokens uniques):
+Top Keywords (997 tokens uniques):
+  • apprentissage        (36 mentions)
+  • donnée               (21 mentions)
+  • in                   (20 mentions)
   • the                  (20 mentions)
-  • in                   (19 mentions)
-  • of                   (10 mentions)
-  • and                  (10 mentions)
-  • show                 (8 mentions)
-  • for                  (7 mentions)
-  • to                   (7 mentions)
-  • hn                   (7 mentions)
-  • with                 (4 mentions)
-  • 2025                 (4 mentions)
+  • modèle               (19 mentions)
+  • automatique          (15 mentions)
+  • intelligence         (13 mentions)
+  • artificiel           (13 mentions)
+  • année                (12 mentions)
+  • and                  (11 mentions)
 
 Distribution par Niveau:
-  • Unknown             :  62 (100.0%)
+  • Unknown             :  65 (100.0%)
 
 
 😊 ANALYSE SENTIMENTS
 ---------------------------------------------------------------------------
-Neutre         :  62 articles (100.0%)
+Neutre         :  65 articles (100.0%)
 
 
 ===========================================================================

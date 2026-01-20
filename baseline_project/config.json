@@ -20,7 +20,18 @@
       "api_key": "YOUR_API_KEY_HERE",
       "queries": ["NLP python tutorial", "BERT fine-tuning", "transformers"],
       "max_results": 5
-    }
+    },
+"wikipedia": {
+  "enabled": true,
+  "search_terms": [
+    "Traitement automatique des langues",
+    "Apprentissage automatique",
+    "Apprentissage profond"
+  ],
+  "language": "fr",
+  "max_articles": 10
+}
+
   },
   
   "preprocessing": {
