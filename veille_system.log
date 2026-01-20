@@ -1361,3 +1361,179 @@ If this is a private repository, make sure to pass a token having permission to 
 2026-01-20 12:46:41,042 | __main__ | INFO | Articles traités: 66
 2026-01-20 12:46:41,042 | __main__ | INFO | Temps total: 12:46:41
 2026-01-20 12:46:41,043 | __main__ | INFO | ===========================================================================
+2026-01-20 14:20:20,218 | __main__ | INFO | 🚀 Pipeline Veille NLP - Démarrage
+2026-01-20 14:20:20,219 | __main__ | INFO | Configuration chargée depuis: config.json
+2026-01-20 14:20:20,219 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:20:20,219 | __main__ | INFO | ÉTAPE 1 : COLLECTE ARTICLES
+2026-01-20 14:20:20,219 | __main__ | INFO | ===========================================================================
+2026-01-20 14:20:20,220 | news_collector | INFO | ======================================================================
+2026-01-20 14:20:20,220 | news_collector | INFO | 📥 COLLECTE ARTICLES - Début
+2026-01-20 14:20:20,220 | news_collector | INFO | ======================================================================
+2026-01-20 14:20:20,220 | news_collector | INFO | 🔄 Collecte HackerNews...
+2026-01-20 14:20:20,220 | news_collector | INFO |   Scraping page 1/2
+2026-01-20 14:20:22,989 | news_collector | INFO |   Scraping page 2/2
+2026-01-20 14:20:25,211 | news_collector | INFO | ✅ HackerNews: 60 articles collectés
+2026-01-20 14:20:25,211 | news_collector | INFO | 🔄 Collecte RSS: https://pycoders.com/feed
+2026-01-20 14:20:25,643 | news_collector | INFO | ✅ RSS: 3 articles collectés
+2026-01-20 14:20:25,644 | news_collector | INFO | 🔄 Collecte Wikipedia...
+2026-01-20 14:20:25,644 | wikipediaapi | INFO | Wikipedia: language=fr, user_agent: Mozilla/5.0 (compatible; NewsCollector/1.0; wikipedia-api) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=ExtractFormat.WIKI
+2026-01-20 14:20:25,644 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Traitement automatique des langues&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-20 14:20:25,863 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Traitement automatique des langues&explaintext=1&exsectionformat=wiki
+2026-01-20 14:20:26,102 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apprentissage automatique&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-20 14:20:26,266 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apprentissage automatique&explaintext=1&exsectionformat=wiki
+2026-01-20 14:20:26,607 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apprentissage profond&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-20 14:20:26,781 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apprentissage profond&explaintext=1&exsectionformat=wiki
+2026-01-20 14:20:26,939 | news_collector | INFO | ✅ Wikipedia: 3 articles collectés
+2026-01-20 14:20:26,941 | news_collector | INFO | ======================================================================
+2026-01-20 14:20:26,941 | news_collector | INFO | 📊 RÉSUMÉ COLLECTE
+2026-01-20 14:20:26,942 | news_collector | INFO |    Total articles : 66
+2026-01-20 14:20:26,943 | news_collector | INFO |    Total erreurs : 0
+2026-01-20 14:20:26,943 | news_collector | INFO | ======================================================================
+2026-01-20 14:20:26,948 | news_collector | INFO | ✅ Articles sauvegardés: data/articles_raw.jsonl
+2026-01-20 14:20:26,950 | news_collector | INFO | ✅ Erreurs sauvegardées: data/collection_errors.json
+2026-01-20 14:20:26,950 | __main__ | INFO | ✅ ÉTAPE 1 COMPLÉTÉE : 66 articles collectés
+2026-01-20 14:20:26,951 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:20:26,951 | __main__ | INFO | ÉTAPE 2 : PRÉTRAITEMENT NLP
+2026-01-20 14:20:26,952 | __main__ | INFO | ===========================================================================
+2026-01-20 14:20:29,875 | text_preprocessor | INFO | ✅ Modèle spaCy chargé: fr_core_news_sm
+2026-01-20 14:20:29,875 | text_preprocessor | INFO | 🔧 Preprocessing 66 articles...
+2026-01-20 14:20:30,081 | text_preprocessor | INFO |   ✓ 20/66 articles
+2026-01-20 14:20:30,275 | text_preprocessor | INFO |   ✓ 40/66 articles
+2026-01-20 14:20:30,465 | text_preprocessor | INFO |   ✓ 60/66 articles
+2026-01-20 14:20:31,324 | text_preprocessor | INFO | ✅ Preprocessing terminé: 66 articles
+2026-01-20 14:20:31,326 | __main__ | INFO | ✅ ÉTAPE 2 COMPLÉTÉE : 66 articles traités
+2026-01-20 14:20:31,329 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:20:31,329 | __main__ | INFO | ÉTAPE 3 : CLASSIFICATION & EXTRACTION
+2026-01-20 14:20:31,329 | __main__ | INFO | ===========================================================================
+2026-01-20 14:20:31,329 | news_classifier | INFO | 📥 Chargement modèle: distilbert-base-multilingual-uncased...
+2026-01-20 14:20:31,471 | news_classifier | ERROR | ❌ Erreur chargement modèle: distilbert-base-multilingual-uncased is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+2026-01-20 14:20:34,405 | tensorflow | WARNING | From C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2026-01-20 14:20:35,185 | news_classifier | INFO | ✅ Sentiment classifier chargé
+2026-01-20 14:20:35,185 | news_classifier | INFO | 🤖 Classification 66 articles...
+2026-01-20 14:20:35,336 | news_classifier | INFO |   ✓ 10/66 articles
+2026-01-20 14:20:35,441 | news_classifier | INFO |   ✓ 20/66 articles
+2026-01-20 14:20:35,551 | news_classifier | INFO |   ✓ 30/66 articles
+2026-01-20 14:20:35,652 | news_classifier | INFO |   ✓ 40/66 articles
+2026-01-20 14:20:35,759 | news_classifier | INFO |   ✓ 50/66 articles
+2026-01-20 14:20:35,865 | news_classifier | INFO |   ✓ 60/66 articles
+2026-01-20 14:20:35,910 | news_classifier | WARNING | Erreur sentiment: The size of tensor a (711) must match the size of tensor b (512) at non-singleton dimension 1
+2026-01-20 14:20:35,913 | news_classifier | WARNING | Erreur sentiment: The size of tensor a (857) must match the size of tensor b (512) at non-singleton dimension 1
+2026-01-20 14:20:35,918 | news_classifier | WARNING | Erreur sentiment: The size of tensor a (796) must match the size of tensor b (512) at non-singleton dimension 1
+2026-01-20 14:20:35,918 | news_classifier | INFO | 🔍 Duplicate detection (threshold=0.85)...
+2026-01-20 14:20:35,924 | news_classifier | INFO | ✅ Duplicate detection: 1 doublons trouvés
+2026-01-20 14:20:35,924 | news_classifier | INFO | ✅ Classification terminée: 66 articles
+2026-01-20 14:20:35,927 | __main__ | INFO | ✅ ÉTAPE 3 COMPLÉTÉE : 66 articles classifiés
+2026-01-20 14:20:35,950 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:20:35,951 | __main__ | INFO | ÉTAPE 4 : GÉNÉRATION RAPPORT
+2026-01-20 14:20:35,951 | __main__ | INFO | ===========================================================================
+2026-01-20 14:20:35,951 | report_generator | INFO | 📝 Génération rapport...
+2026-01-20 14:20:35,951 | report_generator | INFO | 📈 Extraction trending topics...
+2026-01-20 14:20:35,952 | report_generator | INFO | ✅ 1 trending topics trouvés
+2026-01-20 14:20:35,952 | report_generator | INFO | ✨ Extraction must-read articles...
+2026-01-20 14:20:35,952 | report_generator | INFO | ✅ 5 must-read articles sélectionnés
+2026-01-20 14:20:35,952 | report_generator | INFO | 📊 Analyse thématique...
+2026-01-20 14:20:35,953 | report_generator | INFO | 😊 Analyse sentiments...
+2026-01-20 14:20:35,954 | report_generator | INFO | ✅ Rapport sauvegardé: output\veille_report.txt
+2026-01-20 14:20:35,954 | __main__ | INFO | ✅ ÉTAPE 4 COMPLÉTÉE : Rapport sauvegardé
+2026-01-20 14:20:35,955 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:20:35,955 | __main__ | INFO | ✅ PIPELINE COMPLET - SUCCÈS
+2026-01-20 14:20:35,955 | __main__ | INFO | ===========================================================================
+2026-01-20 14:20:35,955 | __main__ | INFO | Rapport généré: output/veille_report.txt
+2026-01-20 14:20:35,955 | __main__ | INFO | Articles traités: 66
+2026-01-20 14:20:35,955 | __main__ | INFO | Temps total: 14:20:35
+2026-01-20 14:20:35,956 | __main__ | INFO | ===========================================================================
+2026-01-20 14:26:29,568 | __main__ | INFO | 🚀 Pipeline Veille NLP - Démarrage
+2026-01-20 14:26:29,569 | __main__ | INFO | Configuration chargée depuis: config.json
+2026-01-20 14:26:29,569 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:26:29,569 | __main__ | INFO | ÉTAPE 1 : COLLECTE ARTICLES
+2026-01-20 14:26:29,569 | __main__ | INFO | ===========================================================================
+2026-01-20 14:26:29,569 | news_collector | INFO | ======================================================================
+2026-01-20 14:26:29,570 | news_collector | INFO | 📥 COLLECTE ARTICLES - Début
+2026-01-20 14:26:29,570 | news_collector | INFO | ======================================================================
+2026-01-20 14:26:29,570 | news_collector | INFO | 🔄 Collecte HackerNews...
+2026-01-20 14:26:29,570 | news_collector | INFO |   Scraping page 1/2
+2026-01-20 14:26:32,314 | news_collector | INFO |   Scraping page 2/2
+2026-01-20 14:26:34,536 | news_collector | INFO | ✅ HackerNews: 60 articles collectés
+2026-01-20 14:26:34,538 | news_collector | INFO | 🔄 Collecte RSS: https://pycoders.com/feed
+2026-01-20 14:26:35,003 | news_collector | INFO | ✅ RSS: 3 articles collectés
+2026-01-20 14:26:35,003 | news_collector | INFO | 🔄 Collecte Wikipedia...
+2026-01-20 14:26:35,004 | wikipediaapi | INFO | Wikipedia: language=fr, user_agent: Mozilla/5.0 (compatible; NewsCollector/1.0; wikipedia-api) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=ExtractFormat.WIKI
+2026-01-20 14:26:35,004 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Traitement automatique des langues&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-20 14:26:35,245 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Traitement automatique des langues&explaintext=1&exsectionformat=wiki
+2026-01-20 14:26:35,499 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apprentissage automatique&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-20 14:26:35,674 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apprentissage automatique&explaintext=1&exsectionformat=wiki
+2026-01-20 14:26:36,021 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Apprentissage profond&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-20 14:26:36,188 | wikipediaapi | INFO | Request URL: https://fr.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Apprentissage profond&explaintext=1&exsectionformat=wiki
+2026-01-20 14:26:36,346 | news_collector | INFO | ✅ Wikipedia: 3 articles collectés
+2026-01-20 14:26:36,348 | news_collector | INFO | ======================================================================
+2026-01-20 14:26:36,349 | news_collector | INFO | 📊 RÉSUMÉ COLLECTE
+2026-01-20 14:26:36,349 | news_collector | INFO |    Total articles : 66
+2026-01-20 14:26:36,350 | news_collector | INFO |    Total erreurs : 0
+2026-01-20 14:26:36,350 | news_collector | INFO | ======================================================================
+2026-01-20 14:26:36,354 | news_collector | INFO | ✅ Articles sauvegardés: data/articles_raw.jsonl
+2026-01-20 14:26:36,355 | news_collector | INFO | ✅ Erreurs sauvegardées: data/collection_errors.json
+2026-01-20 14:26:36,355 | __main__ | INFO | ✅ ÉTAPE 1 COMPLÉTÉE : 66 articles collectés
+2026-01-20 14:26:36,356 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:26:36,357 | __main__ | INFO | ÉTAPE 2 : PRÉTRAITEMENT NLP
+2026-01-20 14:26:36,357 | __main__ | INFO | ===========================================================================
+2026-01-20 14:26:39,223 | text_preprocessor | INFO | ✅ Modèle spaCy chargé: fr_core_news_sm
+2026-01-20 14:26:39,224 | text_preprocessor | INFO | 🔧 Preprocessing 66 articles...
+2026-01-20 14:26:39,420 | text_preprocessor | INFO |   ✓ 20/66 articles
+2026-01-20 14:26:39,608 | text_preprocessor | INFO |   ✓ 40/66 articles
+2026-01-20 14:26:39,797 | text_preprocessor | INFO |   ✓ 60/66 articles
+2026-01-20 14:26:40,631 | text_preprocessor | INFO | ✅ Preprocessing terminé: 66 articles
+2026-01-20 14:26:40,632 | __main__ | INFO | ✅ ÉTAPE 2 COMPLÉTÉE : 66 articles traités
+2026-01-20 14:26:40,634 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:26:40,635 | __main__ | INFO | ÉTAPE 3 : CLASSIFICATION & EXTRACTION
+2026-01-20 14:26:40,635 | __main__ | INFO | ===========================================================================
+2026-01-20 14:26:40,635 | news_classifier | INFO | 📥 Chargement modèle: distilbert-base-multilingual-uncased...
+2026-01-20 14:26:40,786 | news_classifier | ERROR | ❌ Erreur chargement modèle: distilbert-base-multilingual-uncased is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+2026-01-20 14:26:43,708 | tensorflow | WARNING | From C:\Users\mathi\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2026-01-20 14:26:44,427 | news_classifier | INFO | ✅ Sentiment classifier chargé
+2026-01-20 14:26:44,428 | news_classifier | INFO | 🤖 Classification 66 articles...
+2026-01-20 14:26:44,557 | news_classifier | INFO |   ✓ 10/66 articles
+2026-01-20 14:26:44,662 | news_classifier | INFO |   ✓ 20/66 articles
+2026-01-20 14:26:44,768 | news_classifier | INFO |   ✓ 30/66 articles
+2026-01-20 14:26:44,871 | news_classifier | INFO |   ✓ 40/66 articles
+2026-01-20 14:26:44,975 | news_classifier | INFO |   ✓ 50/66 articles
+2026-01-20 14:26:45,082 | news_classifier | INFO |   ✓ 60/66 articles
+2026-01-20 14:26:45,124 | news_classifier | WARNING | Erreur sentiment: The size of tensor a (711) must match the size of tensor b (512) at non-singleton dimension 1
+2026-01-20 14:26:45,128 | news_classifier | WARNING | Erreur sentiment: The size of tensor a (857) must match the size of tensor b (512) at non-singleton dimension 1
+2026-01-20 14:26:45,132 | news_classifier | WARNING | Erreur sentiment: The size of tensor a (796) must match the size of tensor b (512) at non-singleton dimension 1
+2026-01-20 14:26:45,132 | news_classifier | INFO | 🔍 Duplicate detection (threshold=0.85)...
+2026-01-20 14:26:45,138 | news_classifier | INFO | ✅ Duplicate detection: 1 doublons trouvés
+2026-01-20 14:26:45,138 | news_classifier | INFO | ✅ Classification terminée: 66 articles
+2026-01-20 14:26:45,141 | __main__ | INFO | ✅ ÉTAPE 3 COMPLÉTÉE : 66 articles classifiés
+2026-01-20 14:26:45,170 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:26:45,170 | __main__ | INFO | ÉTAPE 4 : GÉNÉRATION RAPPORT
+2026-01-20 14:26:45,171 | __main__ | INFO | ===========================================================================
+2026-01-20 14:26:45,171 | report_generator | INFO | 📝 Génération rapport...
+2026-01-20 14:26:45,171 | report_generator | INFO | 📈 Extraction trending topics...
+2026-01-20 14:26:45,171 | report_generator | INFO | ✅ 1 trending topics trouvés
+2026-01-20 14:26:45,172 | report_generator | INFO | ✨ Extraction must-read articles...
+2026-01-20 14:26:45,172 | report_generator | INFO | ✅ 5 must-read articles sélectionnés
+2026-01-20 14:26:45,172 | report_generator | INFO | 📊 Analyse thématique...
+2026-01-20 14:26:45,173 | report_generator | INFO | 😊 Analyse sentiments...
+2026-01-20 14:26:45,174 | report_generator | INFO | ✅ Rapport sauvegardé: output\veille_report.txt
+2026-01-20 14:26:45,174 | __main__ | INFO | ✅ ÉTAPE 4 COMPLÉTÉE : Rapport sauvegardé
+2026-01-20 14:26:45,175 | __main__ | INFO | 
+===========================================================================
+2026-01-20 14:26:45,175 | __main__ | INFO | ✅ PIPELINE COMPLET - SUCCÈS
+2026-01-20 14:26:45,175 | __main__ | INFO | ===========================================================================
+2026-01-20 14:26:45,175 | __main__ | INFO | Rapport généré: output/veille_report.txt
+2026-01-20 14:26:45,175 | __main__ | INFO | Articles traités: 66
+2026-01-20 14:26:45,176 | __main__ | INFO | Temps total: 14:26:45
+2026-01-20 14:26:45,176 | __main__ | INFO | ===========================================================================

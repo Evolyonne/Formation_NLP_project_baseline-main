@@ -1,6 +1,6 @@
 ===========================================================================
 📰 VEILLE AUTOMATIQUE : NLP & Python
-Généré le 20 January 2026 à 12:46
+Généré le 20 January 2026 à 14:26
 ===========================================================================
 
 📊 RÉSUMÉ EXÉCUTIF
@@ -13,61 +13,61 @@ Articles uniques : 65 (dédupli rate: 1.5%)
 
 1. UNKNOWN
    Articles: 65
-   Sentiment dominant: Critique
+   Sentiment dominant: Super Negatif
    Exemples:
+     • Running Claude Code dangerously (safely)
      • Linux kernel framework for PCIe device emulation, 
-     • Level S4 solar radiation event
-     • Increasing the performance of WebAssembly Text For
+     • I'm addicted to being useful
 
 
 ✨ ARTICLES À NE PAS MANQUER
 ---------------------------------------------------------------------------
 
-📌 1. Linux kernel framework for PCIe device emulation, in userspace
+📌 1. Running Claude Code dangerously (safely)
+   Source: HackerNews
+   URL: https://blog.emilburzo.com/2026/01/running-claude-code-dangerously-safely/
+   Niveau: Unknown
+   Confiance: 0.0%
+   Sentiment: Positif
+
+📌 2. Linux kernel framework for PCIe device emulation, in userspace
    Source: HackerNews
    URL: https://github.com/cakehonolulu/pciem
    Niveau: Unknown
    Confiance: 0.0%
-   Sentiment: Critique
+   Sentiment: Super Negatif
 
-📌 2. Level S4 solar radiation event
+📌 3. I'm addicted to being useful
+   Source: HackerNews
+   URL: https://www.seangoedecke.com/addicted-to-being-useful/
+   Niveau: Unknown
+   Confiance: 0.0%
+   Sentiment: Super Negatif
+
+📌 4. Level S4 solar radiation event
    Source: HackerNews
    URL: https://www.swpc.noaa.gov/news/g4-severe-geomagnetic-storm-levels-reached-19-jan-2026
    Niveau: Unknown
    Confiance: 0.0%
    Sentiment: Positif
 
-📌 3. Increasing the performance of WebAssembly Text Format parser by 350%
+📌 5. Increasing the performance of WebAssembly Text Format parser by 350%
    Source: HackerNews
    URL: https://blog.gplane.win/posts/improve-wat-parser-perf.html
    Niveau: Unknown
    Confiance: 0.0%
    Sentiment: Positif
 
-📌 4. King – man + woman is queen; but why? (2017)
-   Source: HackerNews
-   URL: https://p.migdal.pl/blog/2017/01/king-man-woman-queen-why/
-   Niveau: Unknown
-   Confiance: 0.0%
-   Sentiment: Critique
-
-📌 5. String theory can now describe a universe that has dark energy
-   Source: HackerNews
-   URL: https://www.quantamagazine.org/string-theory-can-now-describe-a-universe-that-has-dark-energy-20260114/
-   Niveau: Unknown
-   Confiance: 0.0%
-   Sentiment: Critique
-
 
 📊 ANALYSE THÉMATIQUE
 ---------------------------------------------------------------------------
 
-Top Keywords (1004 tokens uniques):
+Top Keywords (992 tokens uniques):
   • apprentissage        (36 mentions)
-  • the                  (21 mentions)
   • donnée               (21 mentions)
+  • in                   (19 mentions)
+  • the                  (19 mentions)
   • modèle               (19 mentions)
-  • in                   (18 mentions)
   • automatique          (15 mentions)
   • intelligence         (13 mentions)
   • artificiel           (13 mentions)
@@ -80,9 +80,11 @@ Distribution par Niveau:
 
 😊 ANALYSE SENTIMENTS
 ---------------------------------------------------------------------------
-Critique       :  40 articles ( 61.5%)
-Positif        :  18 articles ( 27.7%)
-Neutre         :   7 articles ( 10.8%)
+Positif        :  22 articles ( 33.8%)
+Super Negatif  :  36 articles ( 55.4%)
+Negatif        :   2 articles (  3.1%)
+Super Positif  :   2 articles (  3.1%)
+Neutre         :   3 articles (  4.6%)
 
 
 ===========================================================================

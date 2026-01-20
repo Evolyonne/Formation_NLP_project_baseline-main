@@ -186,12 +186,12 @@ class NewsClassifier:
                 if score > 0.8:
                     label = 'Positif'
                 else:
-                    label = 'Neutre'
+                    label = 'Super Positif'
             else:  # NEGATIVE
                 if score > 0.8:
-                    label = 'Critique'
+                    label = 'Negatif'
                 else:
-                    label = 'Neutre'
+                    label = 'Super Negatif'
             
             return {
                 'sentiment': hf_label,
