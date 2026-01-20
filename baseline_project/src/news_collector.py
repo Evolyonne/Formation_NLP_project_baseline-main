@@ -21,6 +21,8 @@ import time
 from datetime import datetime
 from typing import List, Dict, Optional
 from dataclasses import dataclass, asdict
+import wikipediaapi
+
 
 # ═══════════════════════════════════════════════════════════════════════════
 # LOGGER
@@ -65,6 +67,91 @@ class NewsCollector:
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (compatible; NewsCollector/1.0)'
         })
+
+            # ═══════════════════════════════════════════════════════════════════════
+    # WIKIPEDIA
+    # ═══════════════════════════════════════════════════════════════════════
+
+    def collect_from_wikipedia(self) -> List[Article]:
+        """
+        Récupère des pages Wikipédia à partir de titres (search_terms).
+        NOTE: wikipedia-api ne fait pas une recherche "full search", il ouvre des pages.
+        """
+        cfg = self.config.get('collection', {}).get('wikipedia', {})
+        if not cfg.get('enabled', False):
+            return []
+
+        logger.info("🔄 Collecte Wikipedia...")
+        articles: List[Article] = []
+
+        lang = cfg.get('language', 'fr')
+        terms = cfg.get('search_terms', [])
+        max_articles = int(cfg.get('max_articles', 10))
+
+        try:
+            wiki = wikipediaapi.Wikipedia(
+                language=lang,
+                user_agent='Mozilla/5.0 (compatible; NewsCollector/1.0; wikipedia-api)'
+            )
+
+            seen_urls = set()
+
+            for term in terms:
+                if len(articles) >= max_articles:
+                    break
+
+                try:
+                    page = wiki.page(term)
+
+                    if not page.exists():
+                        logger.warning(f"  ✗ Wikipedia: page introuvable pour '{term}' (lang={lang})")
+                        continue
+
+                    url = page.fullurl
+                    if url in seen_urls:
+                        continue
+                    seen_urls.add(url)
+
+                    text = (page.text or "").strip()
+                    if not text:
+                        continue
+
+                    # (optionnel) limiter taille pour éviter des fichiers énormes
+                    text = text[:5000]
+
+                    article = Article(
+                        title=page.title,
+                        url=url,
+                        content=text,
+                        source='Wikipedia',
+                        date=None,
+                        author=None,
+                        score=None
+                    )
+                    articles.append(article)
+                    logger.debug(f"    ✓ {page.title[:50]}...")
+
+                except Exception as e:
+                    self.errors.append({
+                        'source': 'Wikipedia',
+                        'term': term,
+                        'error': str(e),
+                        'timestamp': datetime.now().isoformat()
+                    })
+                    continue
+
+            logger.info(f"✅ Wikipedia: {len(articles)} articles collectés")
+            return articles
+
+        except Exception as e:
+            logger.error(f"❌ Wikipedia collection failed: {str(e)}")
+            self.errors.append({
+                'source': 'Wikipedia',
+                'error': str(e),
+                'timestamp': datetime.now().isoformat()
+            })
+            return []
+
     
     # ═══════════════════════════════════════════════════════════════════════
     # HACKER NEWS
@@ -303,6 +390,11 @@ class NewsCollector:
         # YouTube
         if self.config.get('collection', {}).get('youtube', {}).get('enabled', False):
             self.articles.extend(self.collect_from_youtube())
+        
+                # Wikipedia
+        if self.config.get('collection', {}).get('wikipedia', {}).get('enabled', False):
+            self.articles.extend(self.collect_from_wikipedia())
+
         
         logger.info("=" * 70)
         logger.info(f"📊 RÉSUMÉ COLLECTE")

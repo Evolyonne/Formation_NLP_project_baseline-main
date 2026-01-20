@@ -79,9 +79,10 @@ class NewsClassifier:
         try:
             self.sentiment_classifier = pipeline(
                 "sentiment-analysis",
-                model="distilbert-base-uncased-finetuned-sst-2-english",
+                model="cardiffnlp/twitter-xlm-roberta-base-sentiment",
                 device=-1
             )
+
             logger.info("✅ Sentiment classifier chargé")
         except Exception as e:
             logger.warning(f"⚠️ Sentiment classifier: {str(e)}")
@@ -153,59 +154,36 @@ class NewsClassifier:
     
     # ═══════════════════════════════════════════════════════════════════════
     # TASK 2 : SENTIMENT ANALYSIS
-    # ═══════════════════════════════════════════════════════════════════════
-    
+        # ═══════════════════════════════════════════════════════════════════════
+        
     def analyze_sentiment(self, text: str) -> Dict:
-        """
-        Analyser sentiment article
-        
-        Returns:
-            {
-                'sentiment': 'POSITIVE' | 'NEGATIVE',
-                'score': float (0-1),
-                'label': 'Positif' | 'Critique' | 'Neutre'  # Mapping personnalisé
-            }
-        """
         if not text or not self.sentiment_classifier:
-            return {
-                'sentiment': 'NEUTRAL',
-                'score': 0.5,
-                'label': 'Neutre'
-            }
-        
+            return {'sentiment': 'NEUTRAL', 'score': 0.5, 'label': 'Neutre'}
+
         try:
-            text_truncated = ' '.join(text.split()[:400])
-            
+            text_truncated = ' '.join(text.split()[:300])
             result = self.sentiment_classifier(text_truncated)[0]
-            
-            # Map HF sentiment à nos catégories
-            hf_label = result['label']  # 'POSITIVE' ou 'NEGATIVE'
-            score = result['score']
-            
-            if hf_label == 'POSITIVE':
-                if score > 0.8:
-                    label = 'Positif'
-                else:
-                    label = 'Neutre'
-            else:  # NEGATIVE
-                if score > 0.8:
-                    label = 'Critique'
-                else:
-                    label = 'Neutre'
-            
-            return {
-                'sentiment': hf_label,
-                'score': round(score, 4),
-                'label': label
-            }
-        
+
+            # Labels attendus: 'positive' / 'neutral' / 'negative'
+            hf_label = result['label'].lower()
+            score = float(result['score'])
+
+            if hf_label == "positive":
+                label = "Positif"
+                sentiment = "POSITIVE"
+            elif hf_label == "negative":
+                label = "Critique"
+                sentiment = "NEGATIVE"
+            else:
+                label = "Neutre"
+                sentiment = "NEUTRAL"
+
+            return {'sentiment': sentiment, 'score': round(score, 4), 'label': label}
+
         except Exception as e:
             logger.warning(f"Erreur sentiment: {str(e)}")
-            return {
-                'sentiment': 'NEUTRAL',
-                'score': 0.5,
-                'label': 'Neutre'
-            }
+            return {'sentiment': 'NEUTRAL', 'score': 0.5, 'label': 'Neutre'}
+
     
     # ═══════════════════════════════════════════════════════════════════════
     # TASK 3 : DUPLICATE DETECTION
