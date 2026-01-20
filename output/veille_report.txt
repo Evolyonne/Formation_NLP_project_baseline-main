@@ -1,6 +1,6 @@
 ===========================================================================
 📰 VEILLE AUTOMATIQUE : NLP & Python
-Généré le 20 January 2026 à 11:55
+Généré le 20 January 2026 à 12:03
 ===========================================================================
 
 📊 RÉSUMÉ EXÉCUTIF
@@ -16,8 +16,8 @@ Articles uniques : 65 (dédupli rate: 1.5%)
    Sentiment dominant: Neutre
    Exemples:
      • Linux kernel framework for PCIe device emulation, 
-     • UK consulting on bringing in social media ban for 
      • The Overcomplexity of the Shadcn Radio Button
+     • Level S4 solar radiation event
 
 
 ✨ ARTICLES À NE PAS MANQUER
@@ -30,30 +30,30 @@ Articles uniques : 65 (dédupli rate: 1.5%)
    Confiance: 0.0%
    Sentiment: Neutre
 
-📌 2. UK consulting on bringing in social media ban for under 16s
-   Source: HackerNews
-   URL: https://www.bbc.com/news/articles/cgm4xpyxp7lo
-   Niveau: Unknown
-   Confiance: 0.0%
-   Sentiment: Neutre
-
-📌 3. The Overcomplexity of the Shadcn Radio Button
+📌 2. The Overcomplexity of the Shadcn Radio Button
    Source: HackerNews
    URL: https://paulmakeswebsites.com/writing/shadcn-radio-button/
    Niveau: Unknown
    Confiance: 0.0%
    Sentiment: Neutre
 
-📌 4. Level S4 solar radiation event
+📌 3. Level S4 solar radiation event
    Source: HackerNews
    URL: https://www.swpc.noaa.gov/news/g4-severe-geomagnetic-storm-levels-reached-19-jan-2026
    Niveau: Unknown
    Confiance: 0.0%
    Sentiment: Neutre
 
-📌 5. Increasing the performance of WebAssembly Text Format parser by 350%
+📌 4. Increasing the performance of WebAssembly Text Format parser by 350%
    Source: HackerNews
    URL: https://blog.gplane.win/posts/improve-wat-parser-perf.html
+   Niveau: Unknown
+   Confiance: 0.0%
+   Sentiment: Neutre
+
+📌 5. UK consulting on bringing in social media ban for under 16s
+   Source: HackerNews
+   URL: https://www.bbc.com/news/articles/cgm4xpyxp7lo
    Niveau: Unknown
    Confiance: 0.0%
    Sentiment: Neutre
@@ -62,7 +62,7 @@ Articles uniques : 65 (dédupli rate: 1.5%)
 📊 ANALYSE THÉMATIQUE
 ---------------------------------------------------------------------------
 
-Top Keywords (997 tokens uniques):
+Top Keywords (995 tokens uniques):
   • apprentissage        (36 mentions)
   • donnée               (21 mentions)
   • in                   (20 mentions)
