@@ -27,7 +27,7 @@
     "language": "fr",
     "spacy_model": "fr_core_news_sm",
     "normalize_case": true,
-    "remove_urls": false,
+    "remove_urls": true,
     "remove_html": true,
     "remove_accents": false,
     "min_token_length": 2,
