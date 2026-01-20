@@ -174,8 +174,17 @@ class NewsClassifier:
             }
         
         try:
-            text_truncated = ' '.join(text.split()[:400])
-            
+            tokenizer = getattr(self.sentiment_classifier, "tokenizer", None)
+            if tokenizer:
+                encoded = tokenizer(text, truncation=True, max_length=512)
+                text_truncated = tokenizer.decode(
+                    encoded["input_ids"],
+                    skip_special_tokens=True,
+                    clean_up_tokenization_spaces=True
+                )
+            else:
+                text_truncated = ' '.join(text.split()[:400])
+
             result = self.sentiment_classifier(text_truncated)[0]
             
             # Map HF sentiment à nos catégories
@@ -186,12 +195,12 @@ class NewsClassifier:
                 if score > 0.8:
                     label = 'Positif'
                 else:
-                    label = 'Super Positif'
+                    label = 'Neutre'
             else:  # NEGATIVE
                 if score > 0.8:
-                    label = 'Negatif'
+                    label = 'Critique'
                 else:
-                    label = 'Super Negatif'
+                    label = 'Neutre'
             
             return {
                 'sentiment': hf_label,

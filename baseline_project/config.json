@@ -24,21 +24,24 @@
 "wikipedia": {
   "enabled": true,
   "search_terms": [
-    "Traitement automatique des langues",
-    "Apprentissage automatique",
-    "Apprentissage profond"
+    "Natural language processing",
+    "Machine learning",
+    "Deep learning",
+    "Transformers (machine learning model)",
+    "BERT (language model)",
+    "Artificial intelligence"
   ],
-  "language": "fr",
+  "language": "en",
   "max_articles": 10
 }
 
   },
   
   "preprocessing": {
-    "language": "fr",
-    "spacy_model": "fr_core_news_sm",
+    "language": "en",
+    "spacy_model": "en_core_web_sm",
     "normalize_case": true,
-    "remove_urls": false,
+    "remove_urls": true,
     "remove_html": true,
     "remove_accents": false,
     "min_token_length": 2,
@@ -46,12 +49,12 @@
     "lemmatization": true
   },
   
-  "classification": {
-    "model_type": "zero-shot",
-    "model_name": "distilbert-base-multilingual-uncased",
-    "labels": ["Beginner", "Intermediate", "Advanced"],
-    "confidence_threshold": 0.5
-  },
+"classification": {
+  "model_type": "zero-shot",
+  "model_name": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+  "labels": ["Beginner", "Intermediate", "Advanced"],
+  "confidence_threshold": 0.5
+},
   
   "deduplication": {
     "method": "cosine_similarity",

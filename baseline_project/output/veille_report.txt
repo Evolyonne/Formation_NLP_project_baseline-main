@@ -1,0 +1,99 @@
+===========================================================================
+📰 VEILLE AUTOMATIQUE : NLP & Python
+Généré le 20 January 2026 à 16:39
+===========================================================================
+
+📊 RÉSUMÉ EXÉCUTIF
+---------------------------------------------------------------------------
+Articles collectés : 68
+Articles uniques : 67 (dédupli rate: 1.5%)
+
+🔥 TRENDING TOPICS (Sujets du moment)
+---------------------------------------------------------------------------
+
+1. INTERMEDIATE
+   Articles: 35
+   Sentiment dominant: Critique
+   Exemples:
+     • IP Addresses Through 2025
+     • Danish pension fund divesting US Treasuries
+     • Show HN: Ocrbase – pdf → .md/.json document OCR an
+
+2. ADVANCED
+   Articles: 32
+   Sentiment dominant: Critique
+   Exemples:
+     • The Zen of Reticulum
+     • I'm addicted to being useful
+     • IP over Avian Carriers with Quality of Service (19
+
+
+✨ ARTICLES À NE PAS MANQUER
+---------------------------------------------------------------------------
+
+📌 1. The Overcomplexity of the Shadcn Radio Button
+   Source: HackerNews
+   URL: https://paulmakeswebsites.com/writing/shadcn-radio-button/
+   Niveau: Advanced
+   Confiance: 92.3%
+   Sentiment: Critique
+
+📌 2. Giving university exams in the age of chatbots
+   Source: HackerNews
+   URL: https://ploum.net/2026-01-19-exam-with-chatbots.html
+   Niveau: Advanced
+   Confiance: 80.5%
+   Sentiment: Critique
+
+📌 3. I'm addicted to being useful
+   Source: HackerNews
+   URL: https://www.seangoedecke.com/addicted-to-being-useful/
+   Niveau: Advanced
+   Confiance: 69.7%
+   Sentiment: Critique
+
+📌 4. Show HN: Pipenet – A Modern Alternative to Localtunnel
+   Source: HackerNews
+   URL: https://pipenet.dev/
+   Niveau: Advanced
+   Confiance: 69.5%
+   Sentiment: Positif
+
+📌 5. Prediction markets are ushering in a world in which news becomes about gambling
+   Source: HackerNews
+   URL: https://www.theatlantic.com/technology/2026/01/america-polymarket-disaster/685662/
+   Niveau: Advanced
+   Confiance: 67.8%
+   Sentiment: Positif
+
+
+📊 ANALYSE THÉMATIQUE
+---------------------------------------------------------------------------
+
+Top Keywords (1164 tokens uniques):
+  • learning             (45 mentions)
+  • machine              (35 mentions)
+  • network              (29 mentions)
+  • deep                 (29 mentions)
+  • language             (27 mentions)
+  • layer                (26 mentions)
+  • learn                (24 mentions)
+  • token                (22 mentions)
+  • ai                   (22 mentions)
+  • algorithm            (21 mentions)
+
+Distribution par Niveau:
+  • Intermediate        :  35 ( 52.2%)
+  • Advanced            :  32 ( 47.8%)
+
+
+😊 ANALYSE SENTIMENTS
+---------------------------------------------------------------------------
+Critique       :  41 articles ( 61.2%)
+Positif        :  20 articles ( 29.9%)
+Neutre         :   6 articles (  9.0%)
+
+
+===========================================================================
+Fin du rapport
+===========================================================================
