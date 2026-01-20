@@ -320,7 +320,7 @@ class NewsCollector:
                     article = Article(
                         title=title,
                         url=link,
-                        content=summary[:200],  # Premiers 200 chars du summary
+                        content=summary[:1500],  # Premiers 200 chars du summary
                         source='RSS',
                         date=date,
                         author=author
