@@ -1,0 +1,99 @@
+===========================================================================
+📰 VEILLE AUTOMATIQUE : NLP & Python
+Généré le 20 January 2026 à 16:44
+===========================================================================
+
+📊 RÉSUMÉ EXÉCUTIF
+---------------------------------------------------------------------------
+Articles collectés : 67
+Articles uniques : 67 (dédupli rate: 0.0%)
+
+🔥 TRENDING TOPICS (Sujets du moment)
+---------------------------------------------------------------------------
+
+1. INTERMEDIATE
+   Articles: 34
+   Sentiment dominant: Neutre
+   Exemples:
+     • IP Addresses Through 2025
+     • Danish pension fund divesting US Treasuries
+     • Show HN: Ocrbase – pdf → .md/.json document OCR an
+
+2. ADVANCED
+   Articles: 33
+   Sentiment dominant: Neutre
+   Exemples:
+     • The Zen of Reticulum
+     • I'm addicted to being useful
+     • IP over Avian Carriers with Quality of Service (19
+
+
+✨ ARTICLES À NE PAS MANQUER
+---------------------------------------------------------------------------
+
+📌 1. The Overcomplexity of the Shadcn Radio Button
+   Source: HackerNews
+   URL: https://paulmakeswebsites.com/writing/shadcn-radio-button/
+   Niveau: Advanced
+   Confiance: 92.3%
+   Sentiment: Critique
+
+📌 2. I'm addicted to being useful
+   Source: HackerNews
+   URL: https://www.seangoedecke.com/addicted-to-being-useful/
+   Niveau: Advanced
+   Confiance: 69.9%
+   Sentiment: Positif
+
+📌 3. Increasing the performance of WebAssembly Text Format parser by 350%
+   Source: HackerNews
+   URL: https://blog.gplane.win/posts/improve-wat-parser-perf.html
+   Niveau: Advanced
+   Confiance: 62.1%
+   Sentiment: Positif
+
+📌 4. Giving university exams in the age of chatbots
+   Source: HackerNews
+   URL: https://ploum.net/2026-01-19-exam-with-chatbots.html
+   Niveau: Advanced
+   Confiance: 80.5%
+   Sentiment: Neutre
+
+📌 5. It's Sundowning in America
+   Source: HackerNews
+   URL: https://paulkrugman.substack.com/p/its-sundowning-in-america
+   Niveau: Intermediate
+   Confiance: 56.6%
+   Sentiment: Critique
+
+
+📊 ANALYSE THÉMATIQUE
+---------------------------------------------------------------------------
+
+Top Keywords (1133 tokens uniques):
+  • learning             (43 mentions)
+  • machine              (35 mentions)
+  • deep                 (29 mentions)
+  • network              (28 mentions)
+  • ai                   (25 mentions)
+  • learn                (23 mentions)
+  • language             (22 mentions)
+  • algorithm            (21 mentions)
+  • neural               (18 mentions)
+  • layer                (18 mentions)
+
+Distribution par Niveau:
+  • Intermediate        :  34 ( 50.7%)
+  • Advanced            :  33 ( 49.3%)
+
+
+😊 ANALYSE SENTIMENTS
+---------------------------------------------------------------------------
+Neutre         :  59 articles ( 88.1%)
+Critique       :   6 articles (  9.0%)
+Positif        :   2 articles (  3.0%)
+
+
+===========================================================================
+Fin du rapport
+===========================================================================
