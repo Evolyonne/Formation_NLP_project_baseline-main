@@ -1,6 +1,6 @@
 ===========================================================================
 📰 VEILLE AUTOMATIQUE : NLP & Python
-Généré le 20 January 2026 à 12:03
+Généré le 20 January 2026 à 12:46
 ===========================================================================
 
 📊 RÉSUMÉ EXÉCUTIF
@@ -13,11 +13,11 @@ Articles uniques : 65 (dédupli rate: 1.5%)
 
 1. UNKNOWN
    Articles: 65
-   Sentiment dominant: Neutre
+   Sentiment dominant: Critique
    Exemples:
      • Linux kernel framework for PCIe device emulation, 
-     • The Overcomplexity of the Shadcn Radio Button
      • Level S4 solar radiation event
+     • Increasing the performance of WebAssembly Text For
 
 
 ✨ ARTICLES À NE PAS MANQUER
@@ -28,46 +28,46 @@ Articles uniques : 65 (dédupli rate: 1.5%)
    URL: https://github.com/cakehonolulu/pciem
    Niveau: Unknown
    Confiance: 0.0%
-   Sentiment: Neutre
+   Sentiment: Critique
 
-📌 2. The Overcomplexity of the Shadcn Radio Button
-   Source: HackerNews
-   URL: https://paulmakeswebsites.com/writing/shadcn-radio-button/
-   Niveau: Unknown
-   Confiance: 0.0%
-   Sentiment: Neutre
-
-📌 3. Level S4 solar radiation event
+📌 2. Level S4 solar radiation event
    Source: HackerNews
    URL: https://www.swpc.noaa.gov/news/g4-severe-geomagnetic-storm-levels-reached-19-jan-2026
    Niveau: Unknown
    Confiance: 0.0%
-   Sentiment: Neutre
+   Sentiment: Positif
 
-📌 4. Increasing the performance of WebAssembly Text Format parser by 350%
+📌 3. Increasing the performance of WebAssembly Text Format parser by 350%
    Source: HackerNews
    URL: https://blog.gplane.win/posts/improve-wat-parser-perf.html
    Niveau: Unknown
    Confiance: 0.0%
-   Sentiment: Neutre
+   Sentiment: Positif
 
-📌 5. UK consulting on bringing in social media ban for under 16s
+📌 4. King – man + woman is queen; but why? (2017)
    Source: HackerNews
-   URL: https://www.bbc.com/news/articles/cgm4xpyxp7lo
+   URL: https://p.migdal.pl/blog/2017/01/king-man-woman-queen-why/
    Niveau: Unknown
    Confiance: 0.0%
-   Sentiment: Neutre
+   Sentiment: Critique
+
+📌 5. String theory can now describe a universe that has dark energy
+   Source: HackerNews
+   URL: https://www.quantamagazine.org/string-theory-can-now-describe-a-universe-that-has-dark-energy-20260114/
+   Niveau: Unknown
+   Confiance: 0.0%
+   Sentiment: Critique
 
 
 📊 ANALYSE THÉMATIQUE
 ---------------------------------------------------------------------------
 
-Top Keywords (995 tokens uniques):
+Top Keywords (1004 tokens uniques):
   • apprentissage        (36 mentions)
+  • the                  (21 mentions)
   • donnée               (21 mentions)
-  • in                   (20 mentions)
-  • the                  (20 mentions)
   • modèle               (19 mentions)
+  • in                   (18 mentions)
   • automatique          (15 mentions)
   • intelligence         (13 mentions)
   • artificiel           (13 mentions)
@@ -80,7 +80,9 @@ Distribution par Niveau:
 
 😊 ANALYSE SENTIMENTS
 ---------------------------------------------------------------------------
-Neutre         :  65 articles (100.0%)
+Critique       :  40 articles ( 61.5%)
+Positif        :  18 articles ( 27.7%)
+Neutre         :   7 articles ( 10.8%)
 
 
 ===========================================================================
