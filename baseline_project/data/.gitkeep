@@ -1,0 +1,7 @@
+# Data folder for storing:
+# - articles_raw.jsonl (collected articles)
+# - articles_processed.jsonl (cleaned articles)
+# - articles_classified.jsonl (classified articles)
+# - collection_errors.json (error logs)
+
+This folder will be auto-populated when you run: python main.py
