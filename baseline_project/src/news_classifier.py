@@ -13,6 +13,7 @@ Usage:
 """
 
 import logging
+import torch
 from typing import List, Dict, Tuple
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -51,49 +52,48 @@ class NewsClassifier:
     """
     
     def __init__(self, config: Dict):
-        """
-        Initialiser classifier
-        
-        Args:
-            config: Dict configuration (voir config.json)
-        """
         self.config = config
-        
-        # Charger modèle classification
-        model_name = config.get('classification', {}).get('model_name', 
-                                                          'distilbert-base-multilingual-uncased')
-        
+
+        model_name = config.get("classification", {}).get(
+            "model_name",
+            "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
+        )
+
+        # --- Zero-shot topic (FORCER PyTorch) ---
         try:
             logger.info(f"📥 Chargement modèle: {model_name}...")
             self.classifier = pipeline(
                 "zero-shot-classification",
                 model=model_name,
-                device=-1  # CPU; utiliser 0 pour GPU si disponible
+                device=-1,
+                framework="pt"
             )
             logger.info(f"✅ Modèle chargé: {model_name}")
         except Exception as e:
             logger.error(f"❌ Erreur chargement modèle: {str(e)}")
             self.classifier = None
-        
-        # Sentiment classifier (optionnel)
+
+        # --- Sentiment (FORCER PyTorch) ---
         try:
             self.sentiment_classifier = pipeline(
                 "sentiment-analysis",
-                model="distilbert-base-uncased-finetuned-sst-2-english",
-                device=-1
+                model="cardiffnlp/twitter-xlm-roberta-base-sentiment",
+                device=-1,
+                framework="pt"
             )
             logger.info("✅ Sentiment classifier chargé")
         except Exception as e:
             logger.warning(f"⚠️ Sentiment classifier: {str(e)}")
             self.sentiment_classifier = None
-        
-        # Vectorizer pour duplicate detection
+
+        # --- Vectorizer pour duplicate detection ---
         self.vectorizer = TfidfVectorizer(
             max_features=5000,
             lowercase=True,
-            stop_words='english'
+            stop_words="english"
         )
         self.tfidf_matrix = None
+
     
     # ═══════════════════════════════════════════════════════════════════════
     # TASK 1 : TOPIC CLASSIFICATION
@@ -167,54 +167,44 @@ class NewsClassifier:
             }
         """
         if not text or not self.sentiment_classifier:
-            return {
-                'sentiment': 'NEUTRAL',
-                'score': 0.5,
-                'label': 'Neutre'
-            }
-        
-        try:
-            tokenizer = getattr(self.sentiment_classifier, "tokenizer", None)
-            if tokenizer:
-                encoded = tokenizer(text, truncation=True, max_length=512)
-                text_truncated = tokenizer.decode(
-                    encoded["input_ids"],
-                    skip_special_tokens=True,
-                    clean_up_tokenization_spaces=True
-                )
-            else:
-                text_truncated = ' '.join(text.split()[:400])
+            return {'sentiment': 'NEUTRAL', 'score': 0.5, 'label': 'Neutre'}
 
-            result = self.sentiment_classifier(text_truncated)[0]
-            
-            # Map HF sentiment à nos catégories
-            hf_label = result['label']  # 'POSITIVE' ou 'NEGATIVE'
-            score = result['score']
-            
-            if hf_label == 'POSITIVE':
-                if score > 0.8:
-                    label = 'Positif'
-                else:
-                    label = 'Neutre'
-            else:  # NEGATIVE
-                if score > 0.8:
-                    label = 'Critique'
-                else:
-                    label = 'Neutre'
-            
-            return {
-                'sentiment': hf_label,
-                'score': round(score, 4),
-                'label': label
-            }
-        
+        try:
+            # Tronquer proprement avec le tokenizer (évite >512 tokens)
+            tokenizer = self.sentiment_classifier.tokenizer
+            inputs = tokenizer(
+                text,
+                truncation=True,
+                max_length=512,
+                return_tensors="pt"
+            )
+            truncated_text = tokenizer.decode(inputs["input_ids"][0], skip_special_tokens=True)
+
+            result = self.sentiment_classifier(truncated_text)[0]
+
+            hf_label = str(result.get('label', '')).lower()
+            score = float(result.get('score', 0.0))
+
+            # Certains modèles renvoient LABEL_0/1/2 -> mapping
+            if hf_label in ["label_2"]:
+                hf_label = "positive"
+            elif hf_label in ["label_0"]:
+                hf_label = "negative"
+            elif hf_label in ["label_1"]:
+                hf_label = "neutral"
+
+            if hf_label == "positive":
+                return {'sentiment': 'POSITIVE', 'score': round(score, 4), 'label': 'Positif'}
+            elif hf_label == "negative":
+                return {'sentiment': 'NEGATIVE', 'score': round(score, 4), 'label': 'Critique'}
+            else:
+                return {'sentiment': 'NEUTRAL', 'score': round(score, 4), 'label': 'Neutre'}
+
         except Exception as e:
             logger.warning(f"Erreur sentiment: {str(e)}")
-            return {
-                'sentiment': 'NEUTRAL',
-                'score': 0.5,
-                'label': 'Neutre'
-            }
+            return {'sentiment': 'NEUTRAL', 'score': 0.5, 'label': 'Neutre'}
+
+
     
     # ═══════════════════════════════════════════════════════════════════════
     # TASK 3 : DUPLICATE DETECTION
@@ -299,29 +289,46 @@ class NewsClassifier:
         
         for i, article in enumerate(articles):
             try:
-                # Utiliser contenu normalisé ou titre
-                text = article.get('normalized_content', article.get('content', article.get('title', '')))
-                
-                # Task 1: Topic classification
-                topic_result = self.classify_topic(text)
-                article['topic_prediction'] = topic_result['predicted_label']
-                article['topic_confidence'] = topic_result['confidence']
-                article['topic_scores'] = topic_result['all_scores']
-                
+                # Topic -> texte normalisé (OK)
+                text_topic = article.get("normalized_content", article.get("content", article.get("title", "")))
+
+                # Sentiment -> texte BRUT (title + content) (mieux pour éviter "Neutre")
+                text_sentiment = f"{article.get('title','')} {article.get('content','')}".strip()
+                if not text_sentiment:
+                    text_sentiment = article.get("title", "")
+
+                # Task 1: Topic
+                topic_result = self.classify_topic(text_topic)
+                article["topic_prediction"] = topic_result["predicted_label"]
+                article["topic_confidence"] = topic_result["confidence"]
+                article["topic_scores"] = topic_result["all_scores"]
+
                 # Task 2: Sentiment
-                sentiment_result = self.analyze_sentiment(text)
-                article['sentiment'] = sentiment_result['sentiment']
-                article['sentiment_score'] = sentiment_result['score']
-                article['sentiment_label'] = sentiment_result['label']
-                
+                if article.get("source") == "Wikipedia":
+                    # Wikipedia = encyclopédique → sentiment neutre par défaut
+                    sentiment_result = {
+                        "sentiment": "NEUTRAL",
+                        "score": 0.5,
+                        "label": "Neutre"
+                    }
+                else:
+                    sentiment_result = self.analyze_sentiment(text_sentiment)
+
+                article["sentiment"] = sentiment_result["sentiment"]
+                article["sentiment_score"] = sentiment_result["score"]
+                article["sentiment_label"] = sentiment_result["label"]
+
+
+
                 classified.append(article)
-                
+
                 if (i + 1) % 10 == 0:
                     logger.info(f"  ✓ {i + 1}/{len(articles)} articles")
-            
+
             except Exception as e:
                 logger.warning(f"  ✗ Article {i}: {str(e)}")
                 continue
+
         
         # Task 3: Duplicate detection
         classified = self.detect_duplicates(classified, 
