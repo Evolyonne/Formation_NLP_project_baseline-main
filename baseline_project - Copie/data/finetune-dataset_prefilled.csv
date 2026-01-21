@@ -1,0 +1,201 @@
+id,source,url,text,label,baseline_pred
+0,HackerNews,https://www.amusingplanet.com/2026/01/the-antarctic-snow-cruiser.html,The Antarctic Snow Cruiser.,Advanced,Advanced
+1,HackerNews,https://www.jpmorgan.com/insights/global-research/currencies/de-dollarization,De-dollarization: Is the US dollar losing its dominance? (2025).,Intermediate,Intermediate
+2,HackerNews,https://www.unix.dog/~yosh/blog/c-habits-for-me.html,Some C habits I employ for the modern day.,Advanced,Advanced
+3,HackerNews,https://airmass.org/,Astrophotography visibility plotting and planning tool.,Advanced,Advanced
+4,HackerNews,https://blog.jquery.com/2026/01/17/jquery-4-0-0/,jQuery 4.,Advanced,Advanced
+5,HackerNews,https://www.ru.nl/en/staff/news/radboud-university-selects-fairphone-as-standard-smartphone-for-employees,Radboud University selects Fairphone as standard smartphone for employees.,Advanced,Advanced
+6,HackerNews,https://paulmakeswebsites.com/writing/shadcn-radio-button/,The Overcomplexity of the Shadcn Radio Button.,Advanced,Advanced
+7,HackerNews,https://9to5mac.com/2026/01/18/heres-why-walmart-still-doesnt-support-apple-pay/,Why Walmart still doesn't support Apple Pay.,Intermediate,Intermediate
+8,HackerNews,https://www.yahoo.com/news/articles/google-cofounder-reveals-tons-recent-231500103.html,"Google co-founder reveals that ""many"" of the new hires do not have a degree.",Beginner,Beginner
+9,HackerNews,https://dl.acm.org/doi/10.1145/3780063.3780066,Dev-owned testing: Why it fails in practice and succeeds in theory.,Advanced,Advanced
+10,HackerNews,https://github.com/majcheradam/ocrbase,Show HN: Ocrbase – pdf → .md/.json document OCR and structured extraction API.,Intermediate,Intermediate
+11,HackerNews,https://www.ycombinator.com/companies/channel3/jobs/3DIAYYY-backend-engineer,Channel3 (YC S25) Is Hiring.,Advanced,Advanced
+12,HackerNews,https://newsroom.porsche.com/en/2026/company/porsche-deliveries-2025-41516.html,Porsche sold more electrified cars in Europe in 2025 than pure gas-powered cars.,Advanced,Advanced
+13,HackerNews,https://www.mooreds.com/wordpress/archives/3522,How to be a good conference talk audience member (2022).,Advanced,Advanced
+14,HackerNews,https://cua.ai/docs/lume/guide/getting-started/introduction,Show HN: Lume 0.2 – Build and Run macOS VMs with unattended setup.,Intermediate,Intermediate
+15,HackerNews,https://github.com/Loretta1982/xenia,Show HN: Xenia – A monospaced font built with a custom Python engine.,Advanced,Advanced
+16,HackerNews,https://karllorey.com/posts/without-benchmarking-llms-youre-overpaying,"Without benchmarking LLMs, you're likely overpaying 5-10x.",Intermediate,Intermediate
+17,HackerNews,https://www.jetbrains.com/lp/intellij-idea-25/,25 Years of IntelliJ Idea.,Intermediate,Intermediate
+18,HackerNews,https://en.wikipedia.org/wiki/Chatbot_psychosis,Chatbot Psychosis.,Advanced,Advanced
+19,HackerNews,https://drajmarsh.bitbucket.io/earthsun.html,Sun Position Calculator.,Advanced,Advanced
+20,HackerNews,https://httpcolon.dev/,Show HN: HTTP:COLON – A quick HTTP header/directive inspector and reference.,Intermediate,Intermediate
+21,HackerNews,https://movieagent.io,Show HN: Movieagent.io – An agent for movie recommendations (with couple mode).,Advanced,Advanced
+22,HackerNews,https://blog.yakkomajuri.com/blog/raising-money-fucked-me-up,Raising money fucked me up.,Intermediate,Intermediate
+23,HackerNews,https://www.qu8n.com/posts/most-important-software-engineering-skill-2026,Software engineers can no longer neglect their soft skills.,Advanced,Advanced
+24,HackerNews,https://github.com/mastra-ai/mastra,"Show HN: Mastra 1.0, open-source JavaScript agent framework from the Gatsby devs.",Intermediate,Intermediate
+25,HackerNews,https://www.loot-drop.io/,The Startup Graveyard.,Beginner,Beginner
+26,HackerNews,item?id=46619464,Ask HN: What did you find out or explore today?.,Advanced,Advanced
+27,HackerNews,https://lwn.net/SubscriberLink/1053099/19c2e8180aeb0438/,A free and open-source rootkit for Linux.,Intermediate,Intermediate
+28,HackerNews,https://www.tavus.io/post/sparrow-1-human-level-conversational-timing-in-real-time-voice,Show HN: Sparrow-1 – Audio-native model for human-level turn-taking without ASR.,Intermediate,Intermediate
+29,HackerNews,https://research.perplexity.ai/articles/weight-transfer-for-rl-post-training-in-under-2-seconds,Weight Transfer for RL Post-Training in under 2 seconds.,Intermediate,Intermediate
+30,HackerNews,https://research.swtch.com/fp,Floating-Point Printing and Parsing Can Be Simple and Fast.,Intermediate,Intermediate
+31,HackerNews,https://www.theregister.com/2026/01/19/open_sources_new_mission_rebuild/,Open source's new mission: Rebuild the EU tech stack.,Advanced,Advanced
+32,RSS,https://pycoders.com/issues/718,"Issue #718: pandas 3.0, deque, tprof, and More (Jan. 20, 2026). #718 – JANUARY 20, 2026 View in Browser » What&rsquo;s New in pandas 3.0 Learn what&rsquo;s new in pandas 3.0: pd.col expressions for cleaner code, Copy-on-Write for predictable behavior, and PyArrow-backed strings for 5-10x faster operations. CODECUT.AI • Shared by Khuyen Tran Python&rsquo;s deque : Implement Efficient Queues and Stacks Use a Python deque to efficiently append and pop elements from both ends of a sequence, build queues and stacks, and set maxlen for history buffers. REAL PYTHON B2B Authentication for any Situation - Fully Managed or BYO",Advanced,Advanced
+33,HackerNews,https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/,Bubblewrap: A nimble way to prevent agents from accessing your .env files.,Advanced,Advanced
+34,HackerNews,https://devblogs.microsoft.com/oldnewthing/20260119-06/?p=111995,Faster restart of Windows 95 when you hold the shift key.,Intermediate,Intermediate
+35,HackerNews,https://nuudel.digitalcourage.de/,Nuudel: Non-Tracking Appointment Tool.,Intermediate,Intermediate
+36,HackerNews,https://github.com/chunkhound/chunkhound,"Show HN: ChunkHound, a local-first tool for understanding large codebases.",Intermediate,Intermediate
+37,HackerNews,https://langfuse.com/blog/joining-clickhouse,ClickHouse acquires Langfuse.,Advanced,Advanced
+38,HackerNews,https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html,Command-line Tools can be 235x Faster than your Hadoop Cluster (2014).,Advanced,Advanced
+39,HackerNews,https://blog.cloudflare.com/cname-a-record-order-dns-standards/,What came first: the CNAME or the A record?.,Advanced,Advanced
+40,HackerNews,https://github.com/cavi-au/Consent-O-Matic,Consent-O-Matic.,Advanced,Advanced
+41,HackerNews,https://www.righto.com/2025/12/8087-microcode-conditions.html,Conditions in the Intel 8087 floating-point chip's microcode.,Intermediate,Intermediate
+42,HackerNews,https://nautil.us/why-the-do-nothing-challenge-doesnt-do-much-for-you-1262005/,Our collective obsession with boredom: Interview with a boredom lab researcher.,Advanced,Advanced
+43,HackerNews,https://soc.me/interfaces/x86-prefixes-and-escape-opcodes-flowchart.html,x86 prefixes and escape opcodes flowchart.,Intermediate,Intermediate
+44,HackerNews,https://en.wikipedia.org/wiki/Lopado%C2%ADtemacho%C2%ADselacho%C2%ADgaleo%C2%ADkranio%C2%ADleipsano%C2%ADdrim%C2%ADhypo%C2%ADtrimmato%C2%ADsilphio%C2%ADkarabo%C2%ADmelito%C2%ADkatakechy%C2%ADmeno%C2%ADkichl%C2%ADepi%C2%ADkossypho%C2%ADphatto%C2%ADperister%C2%ADalektryon%C2%ADopte%C2%ADkephallio%C2%ADkigklo%C2%ADpeleio%C2%ADlagoio%C2%ADsiraio%C2%ADbaphe%C2%ADtragano%C2%ADpterygon,The longest Greek word.,Advanced,Advanced
+45,HackerNews,https://github.com/PABannier/WSIStreamer,Show HN: Streaming gigabyte medical images from S3 without downloading them.,Advanced,Advanced
+46,HackerNews,https://www.cia.gov/static/5c875f3ec660e092cf893f60b4a288df/SimpleSabotage.pdf,Simple Sabotage Field Manual (1944) [pdf].,Intermediate,Intermediate
+47,HackerNews,https://openai.com/index/our-approach-to-age-prediction/,OpenAI is rolling out age prediction.,Advanced,Advanced
+48,HackerNews,https://weirdmedievalguys.substack.com/p/the-secret-medieval-tunnels-that,The secret medieval tunnels that we still don't understand.,Intermediate,Intermediate
+49,HackerNews,https://en.wikipedia.org/wiki/Gladys_West,Gladys West's vital contributions to GPS technology.,Advanced,Advanced
+50,HackerNews,https://lucumr.pocoo.org/2026/1/18/agent-psychosis/,Agent Psychosis: Are We Going Insane?.,Advanced,Advanced
+51,HackerNews,https://paulmakeswebsites.com/writing/shadcn-radio-button/,The Overcomplexity of the Shadcn Radio Button.,Advanced,Advanced
+52,HackerNews,https://inews.co.uk/news/nato-officials-restrict-intelligence-to-us-over-trump-threats-4179312,NATO officials restrict intelligence to US over Trump threats.,Intermediate,Intermediate
+53,HackerNews,https://cc-sw.com/find-my-and-find-hub-network-research/,Sending Data over Offline Finding Networks.,Intermediate,Intermediate
+54,HackerNews,https://git.qt.io/cradam/fil-qt,Fil-Qt: A Qt Base build with Fil-C experience.,Intermediate,Intermediate
+55,HackerNews,https://sean.heelan.io/2026/01/18/on-the-coming-industrialisation-of-exploit-generation-with-llms/,The coming industrialisation of exploit generation with LLMs.,Advanced,Advanced
+56,HackerNews,https://blog.aiono.dev/posts/understanding-c++-ownership-system.html,Understanding C++ Ownership System.,Advanced,Advanced
+57,RSS,https://pycoders.com/issues/717,"Issue #717: Unit Testing Performance, Cursor, Recursive match, and More (Jan. 13, 2026). #717 – JANUARY 13, 2026 View in Browser » Unit Testing Your Code&rsquo;s Performance Testing your code is important, but not just for correctness also for performance. One approach is to check performance degradation as data sizes go up, also known as Big-O scaling. ITAMA TURNER-TRAURING Tips for Using the AI Coding Editor Cursor Learn Cursor fast: AI-powered coding with agents, project-aware chat, inline edits, and VS Code workflow &ndash; ship smarter, sooner. REAL PYTHON course AI Code Review With Comments You&rsquo;ll Actually Imp",Advanced,Advanced
+58,HackerNews,https://speedminers.fun/,Show HN: Speed Miners – A tiny RTS resource mini-game.,Intermediate,Intermediate
+59,HackerNews,https://xnacly.me/posts/2026/purple-garden-first-optimisations/,Poking holes into bytecode with peephole optimisations.,Advanced,Advanced
+60,HackerNews,https://www.honeycomb.io/blog/you-had-one-job-why-twenty-years-of-devops-has-failed-to-do-it,What twenty years of DevOps has failed to do.,Intermediate,Intermediate
+61,HackerNews,https://radiancefields.com/a-ap-rocky-releases-helicopter-music-video-featuring-gaussian-splatting,"Gaussian Splatting – A$AP Rocky ""Helicopter"" music video.",Advanced,Advanced
+62,HackerNews,https://www.phoronix.com/news/LLVM-Human-In-The-Loop,"LLVM Adopts ""Human in the Loop"" Policy for AI/Tool-Assisted Contributions.",Advanced,Advanced
+63,HackerNews,https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/,"Threads edges out X in daily mobile users, new data shows.",Advanced,Advanced
+64,HackerNews,https://kisslauncher.com/,Kiss Launcher – fast launcher for Android.,Advanced,Advanced
+65,HackerNews,https://da.nmcardle.com/grow,Show HN: Artificial Ivy in the Browser.,Intermediate,Intermediate
+66,HackerNews,item?id=46695821,"Ask HN: Burned out from tech, what else is there?.",Intermediate,Intermediate
+67,HackerNews,https://alexharri.com/blog/ascii-rendering,ASCII characters are not pixels: a deep dive into ASCII rendering.,Intermediate,Intermediate
+68,HackerNews,https://ebpf.party/,Interactive eBPF.,Advanced,Advanced
+69,HackerNews,https://www.patreon.com/posts/another-one-dust-148437771,CD Projekt issue DMCA takedown notice against popular Cyberpunk VR mod.,Advanced,Advanced
+70,HackerNews,https://www.quantamagazine.org/string-theory-can-now-describe-a-universe-that-has-dark-energy-20260114/,String theory can now describe a universe that has dark energy?.,Advanced,Advanced
+71,HackerNews,https://www.rfc-editor.org/rfc/rfc2549.html,IP over Avian Carriers with Quality of Service (1999).,Advanced,Advanced
+72,HackerNews,https://mastodon.social/@heliographe_studio/115890819509545391,If you put Apple icons in reverse it looks like someone getting good at design.,Advanced,Advanced
+73,HackerNews,https://www.mintlify.com/blog/install-md-standard-for-llm-executable-installation,Install.md: A standard for LLM-executable installation.,Intermediate,Intermediate
+74,HackerNews,https://www.weglide.org/flight/978820,From Nevada to Kansas by Glider.,Intermediate,Intermediate
+75,HackerNews,https://twitter.com/cryps1s/status/2013345999826153943,Starlink users must opt out of all browsing data being used to train xAI models.,Intermediate,Intermediate
+76,HackerNews,https://www.cbc.ca/news/politics/carney-davos-speech-9.7052725,"'The old order is not coming back,' Carney says in provocative speech at Davos.",Advanced,Advanced
+77,HackerNews,https://iscinumpy.dev/post/packaging-faster/,How we made Python's packaging library 3x faster.,Advanced,Advanced
+78,HackerNews,https://supaexplorer.com/cybersecurity-insight-report-january-2026,11% of vibe-coded apps are leaking Supabase keys.,Intermediate,Intermediate
+79,HackerNews,https://overreacted.io/a-social-filesystem/,A Social Filesystem.,Advanced,Advanced
+80,HackerNews,https://github.com/loresuso/psc,"psc: The ps utility, with an eBPF twist and container context.",Intermediate,Intermediate
+81,HackerNews,https://teendifferent.substack.com/p/apply_chat_template-is-the-safety,Bypassing Gemma and Qwen safety with raw strings.,Intermediate,Intermediate
+82,HackerNews,https://en.wikipedia.org/wiki/Overlapping_markup,Overlapping Markup.,Intermediate,Intermediate
+83,HackerNews,https://www.theguardian.com/world/2026/jan/20/antarctic-penguins-shift-breeding-season-climate-change,Antarctic penguins have shifted their breeding season.,Intermediate,Intermediate
+84,HackerNews,https://github.com/chrisdiana/TinyCity,Show HN: TinyCity – A tiny city SIM for MicroPython (Thumby micro console).,Intermediate,Intermediate
+85,HackerNews,https://lemdro.id/post/lemdro.id/35049920,Nova Launcher added Facebook and Google Ads tracking.,Advanced,Advanced
+86,HackerNews,https://www.theregister.com/2024/02/21/successor_to_unix_plan_9/,The Successor to Research Unix Was Plan 9 from Bell Labs.,Intermediate,Intermediate
+87,HackerNews,https://www.afterbabel.com/p/how-metas-lawyers-perfected-the-playbook,Meta's legal team abandoned its ethical duties.,Intermediate,Intermediate
+88,HackerNews,https://memdeklaro.computersforpeace.net,Memdeklaro – The humanitarian open source alternative to government ID.,Advanced,Advanced
+89,HackerNews,https://github.com/gibram-io/gibram,Show HN: GibRAM an in-memory ephemeral GraphRAG runtime for retrieval.,Intermediate,Intermediate
+90,HackerNews,https://www.politico.com/news/2026/01/19/hackers-disrupt-iran-state-tv-to-support-exiled-crown-prince-00736052,Hackers disrupt Iran state TV to support exiled crown prince.,Intermediate,Intermediate
+91,HackerNews,https://9to5mac.com/2026/01/16/iphone-apple-app-store-search-results-ads-new-design/,Apple testing new App Store design that blurs the line between ads and results.,Intermediate,Intermediate
+92,HackerNews,https://www.palemoon.org/releasenotes.shtml,Pale Moon v34.0.0 – a new milestone release.,Advanced,Advanced
+93,HackerNews,https://old.reddit.com/r/selfhosted/comments/1qfp2t0/mod_announcement_introducing_vibe_code_friday/,/R/selfhosted limits vibecoded apps.,Intermediate,Intermediate
+94,HackerNews,https://github.com/cakehonolulu/pciem,"Linux kernel framework for PCIe device emulation, in userspace.",Intermediate,Intermediate
+95,HackerNews,https://loot-drop.vercel.app/,Cataloging Failed VC-Backed Startups and Re-Evaluating Them in 2026.,Intermediate,Intermediate
+96,HackerNews,https://www.youtube.com/watch?v=WYTOykSqf2Y,Graphics In Flatland – 2D ray tracing [video].,Advanced,Advanced
+97,HackerNews,https://www.businessinsider.com/martin-luther-king-jr-universal-basic-income-ai-economic-equality-2026-1,Martin Luther King was talking about a universal basic income before it was cool.,Intermediate,Intermediate
+98,HackerNews,https://www.nngroup.com/articles/dark-mode/,Dark Mode vs. Light Mode: Which Is Better?.,Intermediate,Intermediate
+99,HackerNews,https://fly.io/blog/design-and-implementation/,Design and Implementation of Sprites.,Intermediate,Intermediate
+100,HackerNews,https://github.com/antirez/flux2.c,Flux 2 Klein pure C inference.,Intermediate,Intermediate
+101,HackerNews,https://www.pwc.com/gx/en/issues/c-suite-insights/ceo-survey.html,Leading through uncertainty in the age of AI.,Intermediate,Intermediate
+102,HackerNews,https://github.com/cjpais/Handy,Handy – Free open source speech-to-text app.,Intermediate,Intermediate
+103,HackerNews,https://znetwork.org/znetarticle/the-tech-billionaires-behind-trumps-greenland-push/,The Tech Billionaires Behind Trump's Greenland Push.,Advanced,Advanced
+104,HackerNews,https://github.com/kip-dili/kip,Kip: A programming language based on grammatical cases of Turkish.,Intermediate,Intermediate
+105,HackerNews,https://cassidoo.co/post/ai-llm-discoverability/,A fun trick for getting discovered by LLMs and AI tools.,Intermediate,Intermediate
+106,HackerNews,https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup,Wikipedia: WikiProject AI Cleanup.,Advanced,Advanced
+107,HackerNews,https://www.tomshardware.com/pc-components/cpus/milk-v-titan-mini-ix-board-with-ur-dp1000-processor-shows-risc-v-ecosystem-taking-shape-m-2-ddr4-and-pcie-card-support-form-a-kit-that-you-can-use-out-of-the-box,RISC-V is coming along quite speedily: Milk-V Titan Mini-ITX 8-core board.,Advanced,Advanced
+108,HackerNews,https://www.nme.com/news/film/netflix-tells-directors-to-repeat-plot-for-people-using-phones-while-watching-says-matt-damon-3924120,"Netflix tells directors to repeat plot for people using phones, says Matt Damon.",Advanced,Advanced
+109,HackerNews,https://www.humanlayer.dev/blog/brief-history-of-ralph,A Brief History of Ralph.,Intermediate,Intermediate
+110,HackerNews,https://www.seanmuirhead.com/blog/targeted-bets,Targeted Bets: An alternative approach to the job hunt.,Advanced,Advanced
+111,HackerNews,https://subth.ink/,Show HN: Subth.ink – write something and see how many others wrote the same.,Advanced,Advanced
+112,HackerNews,https://www.ft.com/content/674b700e-765d-44e0-ba30-13b0c6c5abf1,Tech titans lined up for Trump's second inauguration. Now they're even richer.,Advanced,Advanced
+113,HackerNews,https://www.robinlinacre.com/recommend_duckdb/,Why DuckDB is my first choice for data processing.,Advanced,Advanced
+114,HackerNews,https://www.theguardian.com/us-news/2026/jan/19/jeffrey-epstein-files-unreleased-trump-doj,Nearly all Epstein files still unreleased a month after Congress deadline.,Intermediate,Intermediate
+115,HackerNews,https://www.caimito.net/en/blog/2025/12/07/the-recurring-dream-of-replacing-developers.html,The recurring dream of replacing developers.,Advanced,Advanced
+116,HackerNews,https://www.theguardian.com/uk-news/2026/jan/19/uk-ministers-launch-consultation-into-whether-to-ban-social-media-for-under-16s,UK ministers launch consultation on whether to ban social media for under-16s.,Intermediate,Intermediate
+117,HackerNews,https://github.com/rbbydotdev/opal,"Show HN: Opal Editor, free Obsidian alternative for markdown and site publishing.",Intermediate,Intermediate
+118,HackerNews,https://en.wikipedia.org/wiki/Lopado%C2%ADtemacho%C2%ADselacho%C2%ADgaleo%C2%ADkranio%C2%ADleipsano%C2%ADdrim%C2%ADhypo%C2%ADtrimmato%C2%ADsilphio%C2%ADkarabo%C2%ADmelito%C2%ADkatakechy%C2%ADmeno%C2%ADkichl%C2%ADepi%C2%ADkossypho%C2%ADphatto%C2%ADperister%C2%ADalektryon%C2%ADopte%C2%ADkephallio%C2%ADkigklo%C2%ADpeleio%C2%ADlagoio%C2%ADsiraio%C2%ADbaphe%C2%ADtragano%C2%ADpterygon,The longest Greek word.,Advanced,Advanced
+119,HackerNews,https://read.isabelunraveled.com/p/manifest-rationally,"A rationalist's guide to manifestation. Or, how to live a magical life.",Advanced,Advanced
+120,HackerNews,https://css.csail.mit.edu/6.858/2024/,Computer Systems Security 6.566 / Spring 2024.,Intermediate,Intermediate
+121,HackerNews,https://old.reddit.com/r/selfhosted/comments/1qfp2t0/mod_announcement_introducing_vibe_code_friday/,/R/selfhosted limits vibecoded apps.,Intermediate,Intermediate
+122,HackerNews,https://p.migdal.pl/blog/2017/01/king-man-woman-queen-why/,King – man + woman is queen; but why? (2017).,Intermediate,Intermediate
+123,HackerNews,https://theweek.com/world-news/greenland-natural-resources-impossible-mine,Why Greenland's natural resources are nearly impossible to mine.,Intermediate,Intermediate
+124,HackerNews,https://www.wired.com/story/former-usds-leaders-launch-tech-reform-project-doge/,Former USDS Leaders Launch Tech Reform Project to Fix What DOGE Broke.,Advanced,Advanced
+125,HackerNews,item?id=46618714,Ask HN: Share your personal website.,Intermediate,Intermediate
+126,HackerNews,https://radicle.xyz/2026/01/14/radicle-1.6.0,Radicle 1.6.0 – Amaryllis.,Advanced,Advanced
+127,HackerNews,https://www.bbc.com/future/article/20260116-an-elizabethan-mansions-secrets-for-staying-warm,An Elizabethan mansion's secrets for staying warm.,Advanced,Advanced
+128,Wikipedia,https://en.wikipedia.org/wiki/Machine_learning,"Machine learning. (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance. ML finds application in many fields, including natural language processing, computer vision, speech recognition, email filtering, agriculture, and medicine. The application of ML to business problems is known as predictive analytics. Statistics and mathematical optimisation (mathematical programming) methods comprise the foundations of machine learning. Data mining is a related field of study, focusing on exploratory data analysis (EDA) through unsupervised learning. From a theoretical viewpoint, probably approximately correct learning provides a mathematical and statistical framework for describing machine learning. Most traditional machine learning and deep learning algorithms can be described as empirical risk minimisation under this framework. History The term machine learning was coined in 1959 by Arthur Samuel, an IBM employee and pioneer in the field of computer gaming and artificial intelligence. The synonym self-teaching computers was also used during this time period. The earliest machine learning program was i",Advanced,Advanced
+129,HackerNews,https://trendsfp.github.io/papers/tfp26-paper-12.pdf,Benchmarking a Baseline Fully-in-Place Functional Language Compiler [pdf].,Intermediate,Intermediate
+130,HackerNews,https://www.jbecker.dev/research/prediction-market-microstructure,The microstructure of wealth transfer in prediction markets.,Intermediate,Intermediate
+131,HackerNews,https://nautil.us/the-far-side-had-it-all-wrong-cows-really-can-use-sophisticated-tools-1262026/,Cows can use sophisticated tools.,Advanced,Advanced
+132,HackerNews,https://creepylink.com/,The URL shortener that makes your links look as suspicious as possible.,Intermediate,Intermediate
+133,HackerNews,https://www.harvardmagazine.com/social-sciences/is-the-constitution-broken,Harvard legal scholars debate the state of the U.S. constitution (2025).,Advanced,Advanced
+134,HackerNews,http://www.ulisp.com/show?52G4,Cardputer uLisp Machine (2024).,Intermediate,Intermediate
+135,HackerNews,https://ossa-ma.github.io/blog/openads,Predicting OpenAI's ad strategy.,Advanced,Advanced
+136,HackerNews,https://www.railly.dev/blog/intent-layer/,Show HN: Intent Layer: A context engineering skill for AI agents.,Intermediate,Intermediate
+137,HackerNews,https://kyutai.org/blog/2026-01-13-pocket-tts,Pocket TTS: A high quality TTS that gives your CPU a voice.,Advanced,Advanced
+138,HackerNews,https://nanonets.com/cookbooks/structured-llm-outputs,LLM Structured Outputs Handbook.,Intermediate,Intermediate
+139,HackerNews,https://cursor.com/blog/building-bugbot,Building a better Bugbot.,Advanced,Advanced
+140,HackerNews,https://dylan.gr/1768295794,Have Taken Up Farming.,Advanced,Advanced
+141,HackerNews,https://hawkticehurst.com/2024/11/css-web-components-for-marketing-sites/,CSS Web Components for marketing sites (2024).,Intermediate,Intermediate
+142,HackerNews,https://banay.me/dont-waste-your-backpressure/,Provide agents with automated feedback.,Advanced,Advanced
+143,HackerNews,https://punkx.org/unix-pipe-game/,The Unix Pipe Card Game.,Advanced,Advanced
+144,HackerNews,https://jon.bo/posts/nano-texture/,Notes on Apple's Nano Texture (2025).,Intermediate,Intermediate
+145,HackerNews,https://www.anthropic.com/news/accelerating-scientific-research,How scientists are using Claude to accelerate research and discovery.,Advanced,Advanced
+146,HackerNews,item?id=46654726,Ask HN: Is it still worth pursuing a software startup?.,Intermediate,Intermediate
+147,HackerNews,https://kudmitry.com/articles/dead-internet-theory/,Dead Internet Theory.,Intermediate,Intermediate
+148,HackerNews,https://beats.lasagna.pizza,"Show HN: Beats, a web-based drum machine.",Intermediate,Intermediate
+149,HackerNews,https://danielleheberling.xyz/blog/mindful-social-media/,Use Social Media Mindfully.,Advanced,Advanced
+150,HackerNews,https://www.manchester.ac.uk/about/news/time-spent-on-gaming-and-social-media/,"Study: Minimal evidence links social media, gaming to teen mental health issues.",Intermediate,Intermediate
+151,HackerNews,https://github.com/whoschek/bzfs,Bzfs 1.17.0 near real-time ZFS replication tool is out.,Intermediate,Intermediate
+152,HackerNews,https://computer.rip/2026-01-17-air-traffic-control-9020.html,Air traffic control: the IBM 9020.,Advanced,Advanced
+153,HackerNews,https://longnow.org/ideas/the-26000-year-astronomical-monument-hidden-in-plain-sight/,"The 26,000-Year Astronomical Monument Hidden in Plain Sight.",Intermediate,Intermediate
+154,HackerNews,https://github.com/dannote/figma-use,Show HN: Figma-use – CLI to control Figma for AI agents.,Intermediate,Intermediate
+155,HackerNews,https://www.kielinstitut.de/publications/americas-own-goal-who-pays-the-tariffs-19398/,American importers and consumers bear the cost of 2025 tariffs: analysis.,Advanced,Advanced
+156,HackerNews,https://ploum.net/2026-01-19-exam-with-chatbots.html,Giving university exams in the age of chatbots.,Advanced,Advanced
+157,HackerNews,https://arstechnica.com/space/2026/01/the-first-commercial-space-station-haven-1-is-now-undergoing-assembly-for-launch/,"First commercial space station, Haven-1, is now undergoing assembly for launch.",Advanced,Advanced
+158,HackerNews,https://github.com/jordanhubbard/nanolang,Nanolang: A tiny experimental language designed to be targeted by coding LLMs.,Advanced,Advanced
+159,HackerNews,https://www.smithsonianmag.com/travel/nepal-mountainside-teahouses-elevate-experience-trekkers-heading-to-top-world-180987844/,Nepal's Mountainside Teahouses Elevate the Experience for Trekkers.,Advanced,Advanced
+160,HackerNews,https://icon-sets.iconify.design/,Iconify: Library of Open Source Icons.,Advanced,Advanced
+161,HackerNews,https://www.reuters.com/business/danish-pension-fund-divest-its-us-treasuries-2026-01-20/,Danish pension fund divesting US Treasuries.,Intermediate,Intermediate
+162,HackerNews,https://aaron.vegh.ca/2026/01/a-modest-proposal,"A Canadian's Call to Arms, Being Pissed Off at the State of Computing.",Intermediate,Intermediate
+163,HackerNews,https://bitchat.free/,A decentralized peer-to-peer messaging application that operates over Bluetooth.,Advanced,Advanced
+164,HackerNews,https://e360.yale.edu/digest/china-renewable-photo-essay,Photos capture the breathtaking scale of China's wind and solar buildout.,Advanced,Advanced
+165,HackerNews,https://www.theregister.com/2026/01/20/micron_powerchip_fab_acquisition/,Micron finds a way to make more DRAM with $1.8B chip plant purchase.,Advanced,Advanced
+166,HackerNews,https://twitter.com/ghhughes/status/2012824754319753456,"Amazon is ending all inventory commingling as of March 31, 2026.",Intermediate,Intermediate
+167,HackerNews,https://twitter.com/beneater/status/2012988790709928305,"""Anyone else out there vibe circuit-building?"".",Advanced,Advanced
+168,HackerNews,https://e360.yale.edu/digest/water-bankruptcy-report,"Much of the World Facing 'Water Bankruptcy,' U.N. Report Warns.",Intermediate,Intermediate
+169,Wikipedia,https://en.wikipedia.org/wiki/Natural_language_processing,"Natural language processing. (NLP) is the processing of natural language information by a computer. NLP is a subfield of computer science and is closely associated with artificial intelligence. NLP is also related to information retrieval, knowledge representation, computational linguistics, and linguistics more broadly. Major processing tasks in an NLP system include: speech recognition, text classification, natural language understanding, and natural language generation. History Natural language processing has its roots in the 1950s. Already in 1950, Alan Turing published an article titled ""Computing Machinery and Intelligence"" which proposed what is now called the Turing test as a criterion of intelligence, though at the time that was not articulated as a problem separate from artificial intelligence. The proposed test includes a task that involves the automated interpretation and generation of natural language. Symbolic NLP (1950s – early 1990s) The premise of symbolic NLP is often illustrated using John Searle's Chinese room thought experiment: Given a collection of rules (e.g., a Chinese phrasebook, with questions and matching answers), the computer emulates natural language understanding (or other NLP tasks) by applying those rules to the data it confronts. 1950s: The Georgetown experiment in 1954 involved fully automatic translation of more than sixty Russian sentences into English. The authors claimed that within three or five years, machine translation would be a so",Intermediate,Intermediate
+170,HackerNews,https://hakibenita.com/postgresql-unconventional-optimizations,Unconventional PostgreSQL Optimizations.,Advanced,Advanced
+171,HackerNews,https://medicalxpress.com/news/2026-01-shingles-vaccine-linked-slower-biological.html,Shingles vaccine linked to slower biological aging in older adults.,Advanced,Advanced
+172,HackerNews,https://github.com/Pankajtanwarbanna/stfu,STFU.,Intermediate,Intermediate
+173,HackerNews,https://github.com/Stokpan/E80,Show HN: E80: an 8-bit CPU in structural VHDL.,Intermediate,Intermediate
+174,HackerNews,https://github.com/minimaxir/ballin,"Show HN: An interactive physics simulator with 1000’s of balls, in your terminal.",Intermediate,Intermediate
+175,HackerNews,https://fqa.9front.org/fqa0.html#0.1,What is Plan 9?.,Advanced,Advanced
+176,HackerNews,https://www.androidauthority.com/google-sideloading-android-high-friction-process-3633468/,Google confirms 'high-friction' sideloading flow is coming to Android.,Advanced,Advanced
+177,HackerNews,https://blog.emilburzo.com/2026/01/running-claude-code-dangerously-safely/,Running Claude Code dangerously (safely).,Intermediate,Intermediate
+178,HackerNews,https://iafisher.com/concordance/,"Fast Concordance: Instant concordance on a corpus of >1,200 books.",Advanced,Advanced
+179,HackerNews,https://www.texasobserver.org/texas-police-invest-tangles-sheriff-surveillance/,Texas police invested in phone-tracking software and won’t say how it’s used.,Advanced,Advanced
+180,HackerNews,https://github.com/willmeyers/window-art,Show HN: A creative coding library for making art with desktop windows.,Advanced,Advanced
+181,HackerNews,https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2843883,Emoji Use in the Electronic Health Record is Increasing.,Advanced,Advanced
+182,HackerNews,https://github.com/elC0mpa/aws-doctor,Show HN: AWS-doctor – A terminal-based AWS health check and cost optimizer in Go.,Advanced,Advanced
+183,HackerNews,https://www.bbc.com/news/articles/cly56w0p9e1o,"Boeing knew of flaw in part linked to UPS plane crash, NTSB report says.",Advanced,Advanced
+184,HackerNews,https://kerkour.com/introduction-rust-simd,SIMD Programming in Pure Rust.,Intermediate,Intermediate
+185,HackerNews,https://medicalxpress.com/news/2025-12-gene-therapy-advances-scientists-dna.html,Gene therapy advances as scientists guide jumping DNA to target faulty genes.,Advanced,Advanced
+186,HackerNews,https://github.com/luxury-yacht/app,Luxury Yacht is a desktop app for managing Kubernetes clusters.,Advanced,Advanced
+187,HackerNews,https://latamlist.com/legal-structures-for-latin-american-startups/,Legal Structures for Latin American Startups (2021).,Advanced,Advanced
+188,HackerNews,https://musgrave.substack.com/p/the-old-world-order-is-dead,The Old World Order Is Dead.,Intermediate,Intermediate
+189,HackerNews,https://paulkrugman.substack.com/p/its-sundowning-in-america,It's Sundowning in America.,Intermediate,Intermediate
+190,HackerNews,https://phys.org/news/2025-07-mammals-evolved-ant-eaters-dinosaur.html,Mammals have evolved into ant eaters 12 times since the dinosaur age – study (2025).,Advanced,Advanced
+191,HackerNews,https://www.theregister.com/2026/01/20/pwc_ai_ceo_survey/,Majority of CEOs report zero payoff from AI splurge.,Intermediate,Intermediate
+192,HackerNews,https://astro.build/blog/joining-cloudflare/,Cloudflare acquires Astro.,Advanced,Advanced
+193,HackerNews,https://slate.com/life/2026/01/body-books-reading-position-posture-pain.html,There is no comfortable reading position.,Advanced,Advanced
+194,HackerNews,https://www.science.org/content/article/nearly-third-social-media-research-has-undisclosed-ties-industry-preprint-claims,Nearly a third of social media research has undisclosed ties to industry.,Intermediate,Intermediate
+195,HackerNews,https://www.philstar.com/headlines/2026/01/18/2501750/nuclear-elements-detected-west-philippine-sea,Nuclear elements detected in West Philippine Sea.,Intermediate,Intermediate
+196,HackerNews,https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files,Claude Cowork exfiltrates files.,Advanced,Advanced
+197,HackerNews,https://www.bbc.com/culture/article/20260113-hello-hiya-aloha-what-our-greetings-reveal,The 600-year-old origins of the word 'hello'.,Advanced,Advanced
+198,HackerNews,https://huggingface.co/zai-org/GLM-4.7-Flash,GLM-4.7-Flash.,Advanced,Advanced
+199,HackerNews,https://www.stephenlewis.me/blog/the-thing-that-brought-me-joy/,The thing that brought me joy.,Advanced,Advanced

@@ -1,0 +1,81 @@
+id,source,url,text,label,baseline_pred,text_len,is_show,is_ask,is_wiki,uncertainty_score
+24,HackerNews,https://github.com/mastra-ai/mastra,"Show HN: Mastra 1.0, open-source JavaScript agent framework from the Gatsby devs.",Advanced,Intermediate,81,True,False,False,5
+26,HackerNews,item?id=46619464,Ask HN: What did you find out or explore today?.,,Advanced,48,False,True,False,5
+28,HackerNews,https://www.tavus.io/post/sparrow-1-human-level-conversational-timing-in-real-time-voice,Show HN: Sparrow-1 – Audio-native model for human-level turn-taking without ASR.,Advanced,Intermediate,80,True,False,False,5
+20,HackerNews,https://httpcolon.dev/,Show HN: HTTP:COLON – A quick HTTP header/directive inspector and reference.,Intermediate,Intermediate,76,True,False,False,5
+21,HackerNews,https://movieagent.io,Show HN: Movieagent.io – An agent for movie recommendations (with couple mode).,Intermediate,Advanced,79,True,False,False,5
+14,HackerNews,https://cua.ai/docs/lume/guide/getting-started/introduction,Show HN: Lume 0.2 – Build and Run macOS VMs with unattended setup.,Advanced,Intermediate,66,True,False,False,5
+15,HackerNews,https://github.com/Loretta1982/xenia,Show HN: Xenia – A monospaced font built with a custom Python engine.,Advanced,Advanced,69,True,False,False,5
+10,HackerNews,https://github.com/majcheradam/ocrbase,Show HN: Ocrbase – pdf → .md/.json document OCR and structured extraction API.,Intermediate,Intermediate,78,True,False,False,5
+36,HackerNews,https://github.com/chunkhound/chunkhound,"Show HN: ChunkHound, a local-first tool for understanding large codebases.",,Intermediate,74,True,False,False,5
+65,HackerNews,https://da.nmcardle.com/grow,Show HN: Artificial Ivy in the Browser.,,Intermediate,39,True,False,False,5
+66,HackerNews,item?id=46695821,"Ask HN: Burned out from tech, what else is there?.",,Intermediate,50,False,True,False,5
+45,HackerNews,https://github.com/PABannier/WSIStreamer,Show HN: Streaming gigabyte medical images from S3 without downloading them.,,Advanced,76,True,False,False,5
+58,HackerNews,https://speedminers.fun/,Show HN: Speed Miners – A tiny RTS resource mini-game.,,Intermediate,54,True,False,False,5
+180,HackerNews,https://github.com/willmeyers/window-art,Show HN: A creative coding library for making art with desktop windows.,,Advanced,71,True,False,False,5
+173,HackerNews,https://github.com/Stokpan/E80,Show HN: E80: an 8-bit CPU in structural VHDL.,,Intermediate,46,True,False,False,5
+174,HackerNews,https://github.com/minimaxir/ballin,"Show HN: An interactive physics simulator with 1000’s of balls, in your terminal.",,Intermediate,81,True,False,False,5
+136,HackerNews,https://www.railly.dev/blog/intent-layer/,Show HN: Intent Layer: A context engineering skill for AI agents.,,Intermediate,65,True,False,False,5
+146,HackerNews,item?id=46654726,Ask HN: Is it still worth pursuing a software startup?.,,Intermediate,55,False,True,False,5
+148,HackerNews,https://beats.lasagna.pizza,"Show HN: Beats, a web-based drum machine.",,Intermediate,41,True,False,False,5
+125,HackerNews,item?id=46618714,Ask HN: Share your personal website.,,Intermediate,36,False,True,False,5
+111,HackerNews,https://subth.ink/,Show HN: Subth.ink – write something and see how many others wrote the same.,,Advanced,76,True,False,False,5
+117,HackerNews,https://github.com/rbbydotdev/opal,"Show HN: Opal Editor, free Obsidian alternative for markdown and site publishing.",,Intermediate,81,True,False,False,5
+89,HackerNews,https://github.com/gibram-io/gibram,Show HN: GibRAM an in-memory ephemeral GraphRAG runtime for retrieval.,,Intermediate,70,True,False,False,5
+84,HackerNews,https://github.com/chrisdiana/TinyCity,Show HN: TinyCity – A tiny city SIM for MicroPython (Thumby micro console).,,Intermediate,75,True,False,False,5
+182,HackerNews,https://github.com/elC0mpa/aws-doctor,Show HN: AWS-doctor – A terminal-based AWS health check and cost optimizer in Go.,,Advanced,81,True,False,False,5
+154,HackerNews,https://github.com/dannote/figma-use,Show HN: Figma-use – CLI to control Figma for AI agents.,,Intermediate,56,True,False,False,5
+18,HackerNews,https://en.wikipedia.org/wiki/Chatbot_psychosis,Chatbot Psychosis.,Intermediate,Advanced,18,False,False,False,3
+22,HackerNews,https://blog.yakkomajuri.com/blog/raising-money-fucked-me-up,Raising money fucked me up.,Beginner,Intermediate,27,False,False,False,3
+23,HackerNews,https://www.qu8n.com/posts/most-important-software-engineering-skill-2026,Software engineers can no longer neglect their soft skills.,Advanced,Advanced,59,False,False,False,3
+2,HackerNews,https://www.unix.dog/~yosh/blog/c-habits-for-me.html,Some C habits I employ for the modern day.,Advanced,Advanced,42,False,False,False,3
+1,HackerNews,https://www.jpmorgan.com/insights/global-research/currencies/de-dollarization,De-dollarization: Is the US dollar losing its dominance? (2025).,Advanced,Intermediate,64,False,False,False,3
+0,HackerNews,https://www.amusingplanet.com/2026/01/the-antarctic-snow-cruiser.html,The Antarctic Snow Cruiser.,Intermediate,Advanced,27,False,False,False,3
+7,HackerNews,https://9to5mac.com/2026/01/18/heres-why-walmart-still-doesnt-support-apple-pay/,Why Walmart still doesn't support Apple Pay.,Beginner,Intermediate,44,False,False,False,3
+6,HackerNews,https://paulmakeswebsites.com/writing/shadcn-radio-button/,The Overcomplexity of the Shadcn Radio Button.,Intermediate,Advanced,46,False,False,False,3
+5,HackerNews,https://www.ru.nl/en/staff/news/radboud-university-selects-fairphone-as-standard-smartphone-for-employees,Radboud University selects Fairphone as standard smartphone for employees.,Intermediate,Advanced,74,False,False,False,3
+4,HackerNews,https://blog.jquery.com/2026/01/17/jquery-4-0-0/,jQuery 4.,Beginner,Advanced,9,False,False,False,3
+3,HackerNews,https://airmass.org/,Astrophotography visibility plotting and planning tool.,Intermediate,Advanced,55,False,False,False,3
+13,HackerNews,https://www.mooreds.com/wordpress/archives/3522,How to be a good conference talk audience member (2022).,Intermediate,Advanced,56,False,False,False,3
+16,HackerNews,https://karllorey.com/posts/without-benchmarking-llms-youre-overpaying,"Without benchmarking LLMs, you're likely overpaying 5-10x.",Advanced,Intermediate,58,False,False,False,3
+17,HackerNews,https://www.jetbrains.com/lp/intellij-idea-25/,25 Years of IntelliJ Idea.,Advanced,Intermediate,26,False,False,False,3
+55,HackerNews,https://sean.heelan.io/2026/01/18/on-the-coming-industrialisation-of-exploit-generation-with-llms/,The coming industrialisation of exploit generation with LLMs.,,Advanced,61,False,False,False,3
+39,HackerNews,https://blog.cloudflare.com/cname-a-record-order-dns-standards/,What came first: the CNAME or the A record?.,,Advanced,44,False,False,False,3
+37,HackerNews,https://langfuse.com/blog/joining-clickhouse,ClickHouse acquires Langfuse.,,Advanced,29,False,False,False,3
+38,HackerNews,https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html,Command-line Tools can be 235x Faster than your Hadoop Cluster (2014).,,Advanced,70,False,False,False,3
+43,HackerNews,https://soc.me/interfaces/x86-prefixes-and-escape-opcodes-flowchart.html,x86 prefixes and escape opcodes flowchart.,,Intermediate,42,False,False,False,3
+40,HackerNews,https://github.com/cavi-au/Consent-O-Matic,Consent-O-Matic.,,Advanced,16,False,False,False,3
+42,HackerNews,https://nautil.us/why-the-do-nothing-challenge-doesnt-do-much-for-you-1262005/,Our collective obsession with boredom: Interview with a boredom lab researcher.,,Advanced,79,False,False,False,3
+41,HackerNews,https://www.righto.com/2025/12/8087-microcode-conditions.html,Conditions in the Intel 8087 floating-point chip's microcode.,,Intermediate,61,False,False,False,3
+48,HackerNews,https://weirdmedievalguys.substack.com/p/the-secret-medieval-tunnels-that,The secret medieval tunnels that we still don't understand.,,Intermediate,59,False,False,False,3
+49,HackerNews,https://en.wikipedia.org/wiki/Gladys_West,Gladys West's vital contributions to GPS technology.,,Advanced,52,False,False,False,3
+50,HackerNews,https://lucumr.pocoo.org/2026/1/18/agent-psychosis/,Agent Psychosis: Are We Going Insane?.,,Advanced,38,False,False,False,3
+51,HackerNews,https://paulmakeswebsites.com/writing/shadcn-radio-button/,The Overcomplexity of the Shadcn Radio Button.,,Advanced,46,False,False,False,3
+52,HackerNews,https://inews.co.uk/news/nato-officials-restrict-intelligence-to-us-over-trump-threats-4179312,NATO officials restrict intelligence to US over Trump threats.,,Intermediate,62,False,False,False,3
+44,HackerNews,https://en.wikipedia.org/wiki/Lopado%C2%ADtemacho%C2%ADselacho%C2%ADgaleo%C2%ADkranio%C2%ADleipsano%C2%ADdrim%C2%ADhypo%C2%ADtrimmato%C2%ADsilphio%C2%ADkarabo%C2%ADmelito%C2%ADkatakechy%C2%ADmeno%C2%ADkichl%C2%ADepi%C2%ADkossypho%C2%ADphatto%C2%ADperister%C2%ADalektryon%C2%ADopte%C2%ADkephallio%C2%ADkigklo%C2%ADpeleio%C2%ADlagoio%C2%ADsiraio%C2%ADbaphe%C2%ADtragano%C2%ADpterygon,The longest Greek word.,,Advanced,23,False,False,False,3
+46,HackerNews,https://www.cia.gov/static/5c875f3ec660e092cf893f60b4a288df/SimpleSabotage.pdf,Simple Sabotage Field Manual (1944) [pdf].,,Intermediate,42,False,False,False,3
+47,HackerNews,https://openai.com/index/our-approach-to-age-prediction/,OpenAI is rolling out age prediction.,,Advanced,37,False,False,False,3
+68,HackerNews,https://ebpf.party/,Interactive eBPF.,,Advanced,17,False,False,False,3
+54,HackerNews,https://git.qt.io/cradam/fil-qt,Fil-Qt: A Qt Base build with Fil-C experience.,,Intermediate,46,False,False,False,3
+53,HackerNews,https://cc-sw.com/find-my-and-find-hub-network-research/,Sending Data over Offline Finding Networks.,,Intermediate,43,False,False,False,3
+19,HackerNews,https://drajmarsh.bitbucket.io/earthsun.html,Sun Position Calculator.,Advanced,Advanced,24,False,False,False,3
+27,HackerNews,https://lwn.net/SubscriberLink/1053099/19c2e8180aeb0438/,A free and open-source rootkit for Linux.,Advanced,Intermediate,41,False,False,False,3
+29,HackerNews,https://research.perplexity.ai/articles/weight-transfer-for-rl-post-training-in-under-2-seconds,Weight Transfer for RL Post-Training in under 2 seconds.,Intermediate,Intermediate,56,False,False,False,3
+30,HackerNews,https://research.swtch.com/fp,Floating-Point Printing and Parsing Can Be Simple and Fast.,Intermediate,Intermediate,59,False,False,False,3
+25,HackerNews,https://www.loot-drop.io/,The Startup Graveyard.,Intermediate,Beginner,22,False,False,False,3
+31,HackerNews,https://www.theregister.com/2026/01/19/open_sources_new_mission_rebuild/,Open source's new mission: Rebuild the EU tech stack.,,Advanced,53,False,False,False,3
+33,HackerNews,https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/,Bubblewrap: A nimble way to prevent agents from accessing your .env files.,,Advanced,74,False,False,False,3
+35,HackerNews,https://nuudel.digitalcourage.de/,Nuudel: Non-Tracking Appointment Tool.,,Intermediate,38,False,False,False,3
+34,HackerNews,https://devblogs.microsoft.com/oldnewthing/20260119-06/?p=111995,Faster restart of Windows 95 when you hold the shift key.,,Intermediate,57,False,False,False,3
+12,HackerNews,https://newsroom.porsche.com/en/2026/company/porsche-deliveries-2025-41516.html,Porsche sold more electrified cars in Europe in 2025 than pure gas-powered cars.,Beginner,Advanced,80,False,False,False,3
+9,HackerNews,https://dl.acm.org/doi/10.1145/3780063.3780066,Dev-owned testing: Why it fails in practice and succeeds in theory.,Advanced,Advanced,67,False,False,False,3
+11,HackerNews,https://www.ycombinator.com/companies/channel3/jobs/3DIAYYY-backend-engineer,Channel3 (YC S25) Is Hiring.,Advanced,Advanced,28,False,False,False,3
+8,HackerNews,https://www.yahoo.com/news/articles/google-cofounder-reveals-tons-recent-231500103.html,"Google co-founder reveals that ""many"" of the new hires do not have a degree.",,Beginner,76,False,False,False,3
+167,HackerNews,https://twitter.com/beneater/status/2012988790709928305,"""Anyone else out there vibe circuit-building?"".",,Advanced,47,False,False,False,3
+135,HackerNews,https://ossa-ma.github.io/blog/openads,Predicting OpenAI's ad strategy.,,Advanced,32,False,False,False,3
+69,HackerNews,https://www.patreon.com/posts/another-one-dust-148437771,CD Projekt issue DMCA takedown notice against popular Cyberpunk VR mod.,,Advanced,71,False,False,False,3
+71,HackerNews,https://www.rfc-editor.org/rfc/rfc2549.html,IP over Avian Carriers with Quality of Service (1999).,,Advanced,54,False,False,False,3
+67,HackerNews,https://alexharri.com/blog/ascii-rendering,ASCII characters are not pixels: a deep dive into ASCII rendering.,,Intermediate,66,False,False,False,3
+64,HackerNews,https://kisslauncher.com/,Kiss Launcher – fast launcher for Android.,,Advanced,42,False,False,False,3
+63,HackerNews,https://techcrunch.com/2026/01/18/threads-edges-out-x-in-daily-mobile-users-new-data-shows/,"Threads edges out X in daily mobile users, new data shows.",,Advanced,58,False,False,False,3
+70,HackerNews,https://www.quantamagazine.org/string-theory-can-now-describe-a-universe-that-has-dark-energy-20260114/,String theory can now describe a universe that has dark energy?.,,Advanced,64,False,False,False,3

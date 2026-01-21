@@ -1,0 +1,108 @@
+===========================================================================
+📰 VEILLE AUTOMATIQUE : NLP & Python
+Généré le 20 January 2026 à 22:05
+===========================================================================
+
+📊 RÉSUMÉ EXÉCUTIF
+---------------------------------------------------------------------------
+Articles collectés : 307
+Articles uniques : 302 (dédupli rate: 1.6%)
+
+🔥 TRENDING TOPICS (Sujets du moment)
+---------------------------------------------------------------------------
+
+1. ADVANCED
+   Articles: 163
+   Sentiment dominant: Neutre
+   Exemples:
+     • Instabridge has acquired Nova Launcher
+     • The Unix Pipe Card Game
+     • Unconventional PostgreSQL Optimizations
+
+2. INTERMEDIATE
+   Articles: 136
+   Sentiment dominant: Neutre
+   Exemples:
+     • The 26,000-Year Astronomical Monument Hidden in Pl
+     • Show HN: Mastra 1.0, open-source JavaScript agent 
+     • Show HN: wxpath – Declarative web crawling in XPat
+
+3. BEGINNER
+   Articles: 3
+   Sentiment dominant: Neutre
+   Exemples:
+     • Google co-founder reveals that "many" of the new h
+     • The Startup Graveyard
+     • Starting from scratch: Training a 30M Topological 
+
+
+✨ ARTICLES À NE PAS MANQUER
+---------------------------------------------------------------------------
+
+📌 1. The Overcomplexity of the Shadcn Radio Button
+   Source: HackerNews
+   URL: https://paulmakeswebsites.com/writing/shadcn-radio-button/
+   Niveau: Advanced
+   Confiance: 92.3%
+   Sentiment: Critique
+
+📌 2. Tech titans lined up for Trump's second inauguration. Now they're even richer
+   Source: HackerNews
+   URL: https://www.ft.com/content/674b700e-765d-44e0-ba30-13b0c6c5abf1
+   Niveau: Advanced
+   Confiance: 90.2%
+   Sentiment: Positif
+
+📌 3. Nepal's Mountainside Teahouses Elevate the Experience for Trekkers
+   Source: HackerNews
+   URL: https://www.smithsonianmag.com/travel/nepal-mountainside-teahouses-elevate-experience-trekkers-heading-to-top-world-180987844/
+   Niveau: Advanced
+   Confiance: 83.9%
+   Sentiment: Positif
+
+📌 4. Photos capture the breathtaking scale of China's wind and solar buildout
+   Source: HackerNews
+   URL: https://e360.yale.edu/digest/china-renewable-photo-essay
+   Niveau: Advanced
+   Confiance: 81.9%
+   Sentiment: Positif
+
+📌 5. Agent Psychosis: Are We Going Insane?
+   Source: HackerNews
+   URL: https://lucumr.pocoo.org/2026/1/18/agent-psychosis/
+   Niveau: Advanced
+   Confiance: 79.9%
+   Sentiment: Critique
+
+
+📊 ANALYSE THÉMATIQUE
+---------------------------------------------------------------------------
+
+Top Keywords (1855 tokens uniques):
+  • learning             (43 mentions)
+  • machine              (38 mentions)
+  • hn                   (35 mentions)
+  • ai                   (33 mentions)
+  • deep                 (29 mentions)
+  • network              (28 mentions)
+  • language             (23 mentions)
+  • learn                (23 mentions)
+  • datum                (21 mentions)
+  • algorithm            (21 mentions)
+
+Distribution par Niveau:
+  • Advanced            : 163 ( 54.0%)
+  • Intermediate        : 136 ( 45.0%)
+  • Beginner            :   3 (  1.0%)
+
+
+😊 ANALYSE SENTIMENTS
+---------------------------------------------------------------------------
+Neutre         : 243 articles ( 80.5%)
+Positif        :  14 articles (  4.6%)
+Critique       :  45 articles ( 14.9%)
+
+
+===========================================================================
+Fin du rapport
+===========================================================================

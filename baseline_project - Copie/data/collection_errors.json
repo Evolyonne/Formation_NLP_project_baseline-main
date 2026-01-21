@@ -1,0 +1,8 @@
+[
+  {
+    "source": "Reddit",
+    "subreddit": "ArtificialIntelligence",
+    "error": "404 Client Error: Not Found for url: https://www.reddit.com/r/ArtificialIntelligence/top.json?limit=20&t=week",
+    "timestamp": "2026-01-21T14:39:51.403598"
+  }
+]

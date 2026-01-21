@@ -1,0 +1,88 @@
+{
+  "project_name": "Veille Automatique NLP",
+  "description": "Système de collecte, analyse et synthèse d'articles techniques",
+  
+  "collection": {
+    "hacker_news": {
+      "enabled": true,
+      "url": "https://news.ycombinator.com/",
+      "num_pages": 10,
+      "timeout": 10,
+      "delay_between_requests": 2
+    },
+    "pycoders_rss": {
+      "enabled": true,
+      "url": "https://pycoders.com/feed",
+      "timeout": 10
+    },
+    "youtube": {
+      "enabled": false,
+      "api_key": "YOUR_API_KEY_HERE",
+      "queries": ["NLP python tutorial", "BERT fine-tuning", "transformers"],
+      "max_results": 5
+    },
+"wikipedia": {
+  "enabled": true,
+  "search_terms": [
+    "Natural Language Processing",
+    "Deep Learning",
+    "Machine Learning", 
+    "Artificial Intelligence"
+
+  ],
+  "language": "en",
+  "max_articles": 30
+},
+  "reddit": {
+  "enabled": true,
+  "subreddits": [
+    "MachineLearning",
+    "ArtificialIntelligence",
+    "Programming",
+    "Python",
+    "technology"
+  ],
+  "limit_per_subreddit": 20
+}
+
+
+  },
+  
+  "preprocessing": {
+    "language": "en",
+    "spacy_model": "en_core_web_sm",
+    "normalize_case": true,
+    "remove_urls": false,
+    "remove_html": true,
+    "remove_accents": false,
+    "min_token_length": 2,
+    "remove_stopwords": true,
+    "lemmatization": true
+  },
+  
+  "classification": {
+    "model_type": "zero-shot",
+    "model_name": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+    "labels": ["Beginner", "Intermediate", "Advanced"],
+    "confidence_threshold": 0.5
+  },
+
+  
+  "deduplication": {
+    "method": "cosine_similarity",
+    "vectorizer": "tfidf",
+    "threshold": 0.85
+  },
+  
+  "output": {
+    "format": "txt",
+    "include_visualizations": true,
+    "output_dir": "./output",
+    "report_name": "veille_report.txt"
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "log_file": "veille_system.log"
+  }
+}
