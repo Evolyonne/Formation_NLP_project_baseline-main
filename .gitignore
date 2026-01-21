@@ -10,7 +10,7 @@ data/
 output/
 *.jsonl
 *.log
-
+baseline_project/veille_system.log
 # Local env / IDE
 .env
 .venv/

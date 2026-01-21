@@ -119,18 +119,8 @@ def step_generate_report(articles: list, config: dict, logger) -> str:
 
 
 def main():
-<<<<<<< HEAD
-    """Pipeline complet"""
-    
-    # Créer répertoires
-    Path('data').mkdir(exist_ok=True)
-    Path('output').mkdir(exist_ok=True)
-    
-    # Charger configuration
-=======
     CONFIG_PATH = BASE_DIR / "config.json"
 
->>>>>>> origin/main
     try:
         with open('config.json', 'r', encoding='utf-8') as f:
             config = json.load(f)

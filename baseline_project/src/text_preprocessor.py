@@ -63,8 +63,8 @@ class TextPreprocessor:
         self.config = config
         
         # Charger modèle spaCy
-        lang = config.get('preprocessing', {}).get('language', 'fr')
-        model_name = config.get('preprocessing', {}).get('spacy_model', 'fr_core_news_sm')
+        lang = config.get('preprocessing', {}).get('language', 'en')
+        model_name = config.get('preprocessing', {}).get('spacy_model', 'en_core_web_sm')
         
         try:
             self.nlp = spacy.load(model_name)
@@ -74,8 +74,8 @@ class TextPreprocessor:
             logger.error(f"   python -m spacy download {model_name}")
             raise
         
-        # Stopwords français
-        self.french_stopwords = self._load_french_stopwords()
+        # Stopwords anglais
+        self.english_stopwords = self._load_english_stopwords()
         
         # Métriques qualité
         self.quality_metrics = {}
@@ -93,7 +93,7 @@ class TextPreprocessor:
         - Remplacer URLs (ne contribuent pas au sens)
         - Normaliser whitespace (aide tokenizer)
         - Lowercase (réduit vocabulaire, mais voir note casse)
-        - PRESERVER accents français
+        - PRESERVER accents anglais
         """
         if not text:
             return ""
@@ -324,23 +324,21 @@ class TextPreprocessor:
     # ═══════════════════════════════════════════════════════════════════════
     
     @staticmethod
-    def _load_french_stopwords() -> set:
-        """Charger stopwords français"""
-        # Stopwords français courants
+    def _load_english_stopwords() -> set:
+        """Charger stopwords anglais"""
+        # Stopwords anglais courants
         stopwords = {
-            'le', 'la', 'les', 'de', 'des', 'du', 'un', 'une', 'des',
-            'et', 'ou', 'mais', 'donc', 'car', 'ni', 'soit',
-            'à', 'au', 'aux', 'par', 'pour', 'avec', 'sans', 'sous',
-            'dans', 'sur', 'entre', 'vers', 'chez', 'depuis', 'jusqu',
-            'je', 'tu', 'il', 'elle', 'nous', 'vous', 'ils', 'elles',
-            'moi', 'toi', 'lui', 'elle', 'nous', 'vous', 'eux',
-            'suis', 'es', 'est', 'sommes', 'êtes', 'sont',
-            'ce', 'cela', 'celui', 'celle', 'ceux', 'celles',
-            'que', 'qui', 'quoi', 'quel', 'quelle', 'quels', 'quelles',
-            'où', 'quand', 'comment', 'pourquoi', 'combien',
-            'très', 'trop', 'plus', 'moins', 'aussi', 'bien', 'mal',
-            'ne', 'pas', 'rien', 'jamais', 'toujours', 'encore',
-            'peu', 'beaucoup', 'assez', 'tout', 'autre'
+            "i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours",
+            "yourself", "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself",
+            "it", "its", "itself", "they", "them", "their", "theirs", "themselves", "what", "which",
+            "who", "whom", "this", "that", "these", "those", "am", "is", "are", "was", "were", "be",
+            "been", "being", "have", "has", "had", "having", "do", "does", "did", "doing", "a", "an", "the",
+            "and", "but", "if", "or", "because", "as", "until", "while", "of", "at", "by", "for", "with",
+            "about", "against", "between", "into", "through", "during", "before", "after", "above", "below", "to",
+            "from", "up", "down", "in", "out", "on", "off", "over", "under", "again", "further", "then", "once", "here", "there",
+            "when", "where", "why", "how", "all", "any", "both", "each", "few", "more", "most", "other", "some", "such", "no",
+            "nor", "not", "only", "own", "same", "so", "than", "too", "very", "s", "t", "can", "will", "just", "don",
+            "should", "now"
         }
         return stopwords
 

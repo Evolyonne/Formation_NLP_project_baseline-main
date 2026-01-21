@@ -303,16 +303,8 @@ class NewsClassifier:
                 article["topic_confidence"] = topic_result["confidence"]
                 article["topic_scores"] = topic_result["all_scores"]
 
-                # Task 2: Sentiment
-                if article.get("source") == "Wikipedia":
-                    # Wikipedia = encyclopédique → sentiment neutre par défaut
-                    sentiment_result = {
-                        "sentiment": "NEUTRAL",
-                        "score": 0.5,
-                        "label": "Neutre"
-                    }
-                else:
-                    sentiment_result = self.analyze_sentiment(text_sentiment)
+
+                sentiment_result = self.analyze_sentiment(text_sentiment)
 
                 article["sentiment"] = sentiment_result["sentiment"]
                 article["sentiment_score"] = sentiment_result["score"]

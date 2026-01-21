@@ -84,7 +84,7 @@ class NewsCollector:
         logger.info("🔄 Collecte Wikipedia...")
         articles: List[Article] = []
 
-        lang = cfg.get('language', 'fr')
+        lang = cfg.get('language', 'en')
         terms = cfg.get('search_terms', [])
         max_articles = int(cfg.get('max_articles', 10))
 
