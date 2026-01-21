@@ -1,0 +1,10 @@
+@"
+# Python
+__pycache__/
+*.pyc
+
+# Generated data/output
+data/
+output/
+*.log
+"@ | Out-File -Encoding utf8 .gitignore

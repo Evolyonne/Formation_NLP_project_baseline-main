@@ -1,1 +1,9 @@
-/.idea
+# caches python
+**/__pycache__/
+**/*.pyc
+
+# sorties générées
+baseline_project/data/*.jsonl
+baseline_project/data/*.json
+baseline_project/output/*.txt
+*.log
