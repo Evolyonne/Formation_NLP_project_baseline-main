@@ -1,31 +1,38 @@
 ===========================================================================
 📰 VEILLE AUTOMATIQUE : NLP & Python
-Généré le 20 January 2026 à 16:39
+Généré le 21 January 2026 à 10:02
 ===========================================================================
 
 📊 RÉSUMÉ EXÉCUTIF
 ---------------------------------------------------------------------------
-Articles collectés : 68
-Articles uniques : 67 (dédupli rate: 1.5%)
+Articles collectés : 307
+Articles uniques : 306 (dédupli rate: 0.3%)
 
 🔥 TRENDING TOPICS (Sujets du moment)
 ---------------------------------------------------------------------------
 
-1. INTERMEDIATE
-   Articles: 35
-   Sentiment dominant: Critique
+1. ADVANCED
+   Articles: 159
+   Sentiment dominant: Neutre
    Exemples:
-     • IP Addresses Through 2025
-     • Danish pension fund divesting US Treasuries
-     • Show HN: Ocrbase – pdf → .md/.json document OCR an
+     • Anthropic's original take home assignment open sou
+     • The Agentic AI Handbook: Production-Ready Patterns
+     • Libbbf: Bound Book Format, A high-performance cont
 
-2. ADVANCED
-   Articles: 32
+2. INTERMEDIATE
+   Articles: 145
+   Sentiment dominant: Neutre
+   Exemples:
+     • 200 MB RAM FreeBSD Desktop
+     • A 26,000-year astronomical monument hidden in plai
+     • cURL removes bug bounties
+
+3. BEGINNER
+   Articles: 2
    Sentiment dominant: Critique
    Exemples:
-     • The Zen of Reticulum
-     • I'm addicted to being useful
-     • IP over Avian Carriers with Quality of Service (19
+     • Google co-founder reveals that "many" of the new h
+     • Starting from scratch: Training a 30M Topological 
 
 
 ✨ ARTICLES À NE PAS MANQUER
@@ -38,60 +45,61 @@ Articles uniques : 67 (dédupli rate: 1.5%)
    Confiance: 92.3%
    Sentiment: Critique
 
-📌 2. Giving university exams in the age of chatbots
+📌 2. Agent Psychosis: Are We Going Insane?
    Source: HackerNews
-   URL: https://ploum.net/2026-01-19-exam-with-chatbots.html
+   URL: https://lucumr.pocoo.org/2026/1/18/agent-psychosis/
    Niveau: Advanced
-   Confiance: 80.5%
+   Confiance: 79.9%
    Sentiment: Critique
 
-📌 3. I'm addicted to being useful
+📌 3. Libbbf: Bound Book Format, A high-performance container for comics and manga
    Source: HackerNews
-   URL: https://www.seangoedecke.com/addicted-to-being-useful/
+   URL: https://github.com/ef1500/libbbf
    Niveau: Advanced
-   Confiance: 69.7%
-   Sentiment: Critique
+   Confiance: 94.4%
+   Sentiment: Neutre
 
-📌 4. Show HN: Pipenet – A Modern Alternative to Localtunnel
+📌 4. How Hightouch built their long-running agent harness
    Source: HackerNews
-   URL: https://pipenet.dev/
+   URL: https://www.amplifypartners.com/blog-posts/how-hightouch-built-their-long-running-agent-harness
    Niveau: Advanced
-   Confiance: 69.5%
-   Sentiment: Positif
+   Confiance: 93.8%
+   Sentiment: Neutre
 
-📌 5. Prediction markets are ushering in a world in which news becomes about gambling
+📌 5. Show HN: Aventos – An experiment in cheap AI SEO
    Source: HackerNews
-   URL: https://www.theatlantic.com/technology/2026/01/america-polymarket-disaster/685662/
+   URL: https://www.aventos.dev/
    Niveau: Advanced
-   Confiance: 67.8%
-   Sentiment: Positif
+   Confiance: 92.4%
+   Sentiment: Neutre
 
 
 📊 ANALYSE THÉMATIQUE
 ---------------------------------------------------------------------------
 
-Top Keywords (1164 tokens uniques):
-  • learning             (45 mentions)
-  • machine              (35 mentions)
-  • network              (29 mentions)
+Top Keywords (1854 tokens uniques):
+  • hn                   (47 mentions)
+  • learning             (43 mentions)
+  • ai                   (40 mentions)
+  • machine              (38 mentions)
   • deep                 (29 mentions)
-  • language             (27 mentions)
-  • layer                (26 mentions)
-  • learn                (24 mentions)
-  • token                (22 mentions)
-  • ai                   (22 mentions)
-  • algorithm            (21 mentions)
+  • network              (28 mentions)
+  • algorithm            (23 mentions)
+  • language             (23 mentions)
+  • learn                (23 mentions)
+  • system               (21 mentions)
 
 Distribution par Niveau:
-  • Intermediate        :  35 ( 52.2%)
-  • Advanced            :  32 ( 47.8%)
+  • Advanced            : 159 ( 52.0%)
+  • Intermediate        : 145 ( 47.4%)
+  • Beginner            :   2 (  0.7%)
 
 
 😊 ANALYSE SENTIMENTS
 ---------------------------------------------------------------------------
-Critique       :  41 articles ( 61.2%)
-Positif        :  20 articles ( 29.9%)
-Neutre         :   6 articles (  9.0%)
+Neutre         : 242 articles ( 79.1%)
+Critique       :  51 articles ( 16.7%)
+Positif        :  13 articles (  4.2%)
 
 
 ===========================================================================

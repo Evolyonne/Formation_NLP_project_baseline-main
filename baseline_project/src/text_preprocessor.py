@@ -97,7 +97,9 @@ class TextPreprocessor:
         """
         if not text:
             return ""
-        
+        #nos regex
+        # Enlever blocs script/style
+        text = re.sub(r"(?is)<(script|style).*?>.*?</\1>", " ", text)
         # 1. Supprimer tags HTML
         text = re.sub(r'<[^>]+>', '', text)
         

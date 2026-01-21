@@ -46,7 +46,7 @@ class NewsClassifier:
        → Choix : TF-IDF cosine (fast, transparent)
        → Alternative : Embeddings (better but slower)
     
-    4. Seuil similarité : 0.85
+    4. Seuil similarité : 0.80
        → Validation : Tester manuellement sur 20 paires
        → Justification : Équilibre false positives/negatives
     """
@@ -210,7 +210,7 @@ class NewsClassifier:
     # TASK 3 : DUPLICATE DETECTION
     # ═══════════════════════════════════════════════════════════════════════
     
-    def detect_duplicates(self, articles: List[Dict], threshold: float = 0.85) -> List[Dict]:
+    def detect_duplicates(self, articles: List[Dict], threshold: float = 0.80) -> List[Dict]:
         """
         Détecter articles dupliqués via similarité cosinus
         
@@ -332,7 +332,7 @@ class NewsClassifier:
         
         # Task 3: Duplicate detection
         classified = self.detect_duplicates(classified, 
-                                           threshold=self.config.get('deduplication', {}).get('threshold', 0.85))
+                                           threshold=self.config.get('deduplication', {}).get('threshold', 0.80))
         
         logger.info(f"✅ Classification terminée: {len(classified)} articles")
         return classified
