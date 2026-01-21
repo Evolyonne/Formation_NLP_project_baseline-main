@@ -1,31 +1,31 @@
 ===========================================================================
 📰 VEILLE AUTOMATIQUE : NLP & Python
-Généré le 21 January 2026 à 10:02
+Généré le 21 January 2026 à 11:40
 ===========================================================================
 
 📊 RÉSUMÉ EXÉCUTIF
 ---------------------------------------------------------------------------
 Articles collectés : 307
-Articles uniques : 306 (dédupli rate: 0.3%)
+Articles uniques : 304 (dédupli rate: 1.0%)
 
 🔥 TRENDING TOPICS (Sujets du moment)
 ---------------------------------------------------------------------------
 
 1. ADVANCED
-   Articles: 159
+   Articles: 157
    Sentiment dominant: Neutre
    Exemples:
-     • Anthropic's original take home assignment open sou
      • The Agentic AI Handbook: Production-Ready Patterns
+     • Anthropic's original take home assignment open sou
      • Libbbf: Bound Book Format, A high-performance cont
 
 2. INTERMEDIATE
    Articles: 145
    Sentiment dominant: Neutre
    Exemples:
-     • 200 MB RAM FreeBSD Desktop
      • A 26,000-year astronomical monument hidden in plai
-     • cURL removes bug bounties
+     • The percentage of Show HN posts is increasing, but
+     • Can you slim macOS down?
 
 3. BEGINNER
    Articles: 2
@@ -52,54 +52,54 @@ Articles uniques : 306 (dédupli rate: 0.3%)
    Confiance: 79.9%
    Sentiment: Critique
 
-📌 3. Libbbf: Bound Book Format, A high-performance container for comics and manga
+📌 3. Engineering as Humanity's Highest Achievement
+   Source: HackerNews
+   URL: https://walkingtheworld.substack.com/p/engineering-as-humanitys-highest
+   Niveau: Advanced
+   Confiance: 94.8%
+   Sentiment: Neutre
+
+📌 4. Libbbf: Bound Book Format, A high-performance container for comics and manga
    Source: HackerNews
    URL: https://github.com/ef1500/libbbf
    Niveau: Advanced
    Confiance: 94.4%
    Sentiment: Neutre
 
-📌 4. How Hightouch built their long-running agent harness
+📌 5. How Hightouch built their long-running agent harness
    Source: HackerNews
    URL: https://www.amplifypartners.com/blog-posts/how-hightouch-built-their-long-running-agent-harness
    Niveau: Advanced
    Confiance: 93.8%
    Sentiment: Neutre
 
-📌 5. Show HN: Aventos – An experiment in cheap AI SEO
-   Source: HackerNews
-   URL: https://www.aventos.dev/
-   Niveau: Advanced
-   Confiance: 92.4%
-   Sentiment: Neutre
-
 
 📊 ANALYSE THÉMATIQUE
 ---------------------------------------------------------------------------
 
-Top Keywords (1854 tokens uniques):
-  • hn                   (47 mentions)
+Top Keywords (1837 tokens uniques):
+  • hn                   (49 mentions)
   • learning             (43 mentions)
   • ai                   (40 mentions)
   • machine              (38 mentions)
   • deep                 (29 mentions)
   • network              (28 mentions)
+  • language             (24 mentions)
   • algorithm            (23 mentions)
-  • language             (23 mentions)
   • learn                (23 mentions)
-  • system               (21 mentions)
+  • system               (19 mentions)
 
 Distribution par Niveau:
-  • Advanced            : 159 ( 52.0%)
-  • Intermediate        : 145 ( 47.4%)
+  • Advanced            : 157 ( 51.6%)
+  • Intermediate        : 145 ( 47.7%)
   • Beginner            :   2 (  0.7%)
 
 
 😊 ANALYSE SENTIMENTS
 ---------------------------------------------------------------------------
-Neutre         : 242 articles ( 79.1%)
-Critique       :  51 articles ( 16.7%)
-Positif        :  13 articles (  4.2%)
+Neutre         : 244 articles ( 80.3%)
+Critique       :  46 articles ( 15.1%)
+Positif        :  14 articles (  4.6%)
 
 
 ===========================================================================
