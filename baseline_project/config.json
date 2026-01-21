@@ -6,7 +6,7 @@
     "hacker_news": {
       "enabled": true,
       "url": "https://news.ycombinator.com/",
-      "num_pages": 2,
+      "num_pages": 10,
       "timeout": 10,
       "delay_between_requests": 2
     },
@@ -20,12 +20,25 @@
       "api_key": "YOUR_API_KEY_HERE",
       "queries": ["NLP python tutorial", "BERT fine-tuning", "transformers"],
       "max_results": 5
-    }
+    },
+"wikipedia": {
+  "enabled": true,
+  "search_terms": [
+    "Natural Language Processing",
+    "Deep Learning",
+    "Machine Learning", 
+    "Artificial Intelligence"
+
+  ],
+  "language": "en",
+  "max_articles": 30
+}
+
   },
   
   "preprocessing": {
-    "language": "fr",
-    "spacy_model": "fr_core_news_sm",
+    "language": "en",
+    "spacy_model": "en_core_web_sm",
     "normalize_case": true,
     "remove_urls": true,
     "remove_html": true,
@@ -37,10 +50,11 @@
   
   "classification": {
     "model_type": "zero-shot",
-    "model_name": "distilbert-base-multilingual-uncased",
+    "model_name": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
     "labels": ["Beginner", "Intermediate", "Advanced"],
     "confidence_threshold": 0.5
   },
+
   
   "deduplication": {
     "method": "cosine_similarity",

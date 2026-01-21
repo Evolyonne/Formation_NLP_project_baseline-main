@@ -1,8 +1,9 @@
-# Python
-__pycache__/
-*.pyc
+# caches python
+**/__pycache__/
+**/*.pyc
 
-# Outputs / data générées
-data/
-output/
+# sorties générées
+baseline_project/data/*.jsonl
+baseline_project/data/*.json
+baseline_project/output/*.txt
 *.log

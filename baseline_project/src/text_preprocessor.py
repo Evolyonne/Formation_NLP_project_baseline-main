@@ -235,8 +235,8 @@ class TextPreprocessor:
         token_loss_pct = (1 - num_final / max(num_original, 1)) * 100
         
         return {
-            'original': text[:100],  # Garder début original
-            'normalized': normalized[:100],
+            'original': text,
+            'normalized': normalized,
             'tokens': tokens_clean,
             'num_tokens_original': num_original,
             'num_tokens_final': num_final,
