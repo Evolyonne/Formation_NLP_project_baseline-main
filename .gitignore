@@ -1,1 +1,6 @@
 /.idea
+/data
+*.pyc
+_pycache__/
+*.output/
+*.log
