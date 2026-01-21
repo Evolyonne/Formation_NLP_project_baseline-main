@@ -59,7 +59,7 @@
   "deduplication": {
     "method": "cosine_similarity",
     "vectorizer": "tfidf",
-    "threshold": 0.85
+    "threshold": 0.80
   },
   
   "output": {

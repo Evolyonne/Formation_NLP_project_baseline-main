@@ -34,21 +34,21 @@ class NewsClassifier:
     DESIGN DECISIONS :
     
     1. Topic Classification : Zero-shot vs Fine-tuned?
-        → Choix : Zero-shot (pas besoin données entraînement)
-        → Avantage : Rapide, flexible sur labels
-        → Limitation : Accuracy inférieure à fine-tuned
+       → Choix : Zero-shot (pas besoin données entraînement)
+       → Avantage : Rapide, flexible sur labels
+       → Limitation : Accuracy inférieure à fine-tuned
     
     2. Modèle multilingue : distilbert-base-multilingual-uncased
-        → Support français + anglais + vitesse
-        → Alternative : roberta (meilleur accuracy, plus lent)
+       → Support français + anglais + vitesse
+       → Alternative : roberta (meilleur accuracy, plus lent)
     
     3. Duplicate detection : Cosine similarity vs Semantic?
-        → Choix : TF-IDF cosine (fast, transparent)
-        → Alternative : Embeddings (better but slower)
+       → Choix : TF-IDF cosine (fast, transparent)
+       → Alternative : Embeddings (better but slower)
     
-    4. Seuil similarité : 0.85
-        → Validation : Tester manuellement sur 20 paires
-        → Justification : Équilibre false positives/negatives
+    4. Seuil similarité : 0.80
+       → Validation : Tester manuellement sur 20 paires
+       → Justification : Équilibre false positives/negatives
     """
     
     def __init__(self, config: Dict):
@@ -153,9 +153,19 @@ class NewsClassifier:
     
     # ═══════════════════════════════════════════════════════════════════════
     # TASK 2 : SENTIMENT ANALYSIS
-        # ═══════════════════════════════════════════════════════════════════════
-        
+    # ═══════════════════════════════════════════════════════════════════════
+    
     def analyze_sentiment(self, text: str) -> Dict:
+        """
+        Analyser sentiment article
+        
+        Returns:
+            {
+                'sentiment': 'POSITIVE' | 'NEGATIVE',
+                'score': float (0-1),
+                'label': 'Positif' | 'Critique' | 'Neutre'  # Mapping personnalisé
+            }
+        """
         if not text or not self.sentiment_classifier:
             return {'sentiment': 'NEUTRAL', 'score': 0.5, 'label': 'Neutre'}
 
@@ -200,7 +210,7 @@ class NewsClassifier:
     # TASK 3 : DUPLICATE DETECTION
     # ═══════════════════════════════════════════════════════════════════════
     
-    def detect_duplicates(self, articles: List[Dict], threshold: float = 0.85) -> List[Dict]:
+    def detect_duplicates(self, articles: List[Dict], threshold: float = 0.80) -> List[Dict]:
         """
         Détecter articles dupliqués via similarité cosinus
         
@@ -322,7 +332,7 @@ class NewsClassifier:
         
         # Task 3: Duplicate detection
         classified = self.detect_duplicates(classified, 
-                                           threshold=self.config.get('deduplication', {}).get('threshold', 0.85))
+                                           threshold=self.config.get('deduplication', {}).get('threshold', 0.80))
         
         logger.info(f"✅ Classification terminée: {len(classified)} articles")
         return classified
