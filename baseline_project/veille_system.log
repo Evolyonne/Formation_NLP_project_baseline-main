@@ -1518,3 +1518,259 @@ AttributeError: 'NoneType' object has no attribute 'endswith'
 2026-01-21 11:44:38,275 | news_classifier | INFO |   ✓ 120/307 articles
 2026-01-21 11:44:41,312 | news_classifier | INFO |   ✓ 130/307 articles
 2026-01-21 11:44:44,456 | news_classifier | INFO |   ✓ 140/307 articles
+2026-01-21 12:07:46,394 | __main__ | INFO | 🚀 Pipeline Veille NLP - Démarrage
+2026-01-21 12:07:46,394 | __main__ | INFO | Configuration chargée depuis: config.json
+2026-01-21 12:07:46,394 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:07:46,394 | __main__ | INFO | ÉTAPE 1 : COLLECTE ARTICLES
+2026-01-21 12:07:46,394 | __main__ | INFO | ===========================================================================
+2026-01-21 12:07:46,394 | news_collector | INFO | ======================================================================
+2026-01-21 12:07:46,394 | news_collector | INFO | 📥 COLLECTE ARTICLES - Début
+2026-01-21 12:07:46,395 | news_collector | INFO | ======================================================================
+2026-01-21 12:07:46,395 | news_collector | INFO | 🔄 Collecte HackerNews...
+2026-01-21 12:07:46,395 | news_collector | INFO |   Scraping page 1/10
+2026-01-21 12:07:49,098 | news_collector | INFO |   Scraping page 2/10
+2026-01-21 12:07:51,326 | news_collector | INFO |   Scraping page 3/10
+2026-01-21 12:07:53,532 | news_collector | INFO |   Scraping page 4/10
+2026-01-21 12:07:55,753 | news_collector | INFO |   Scraping page 5/10
+2026-01-21 12:07:57,967 | news_collector | INFO |   Scraping page 6/10
+2026-01-21 12:08:00,176 | news_collector | INFO |   Scraping page 7/10
+2026-01-21 12:08:02,367 | news_collector | INFO |   Scraping page 8/10
+2026-01-21 12:08:04,577 | news_collector | INFO |   Scraping page 9/10
+2026-01-21 12:08:06,817 | news_collector | INFO |   Scraping page 10/10
+2026-01-21 12:08:09,018 | news_collector | INFO | ✅ HackerNews: 300 articles collectés
+2026-01-21 12:08:09,018 | news_collector | INFO | 🔄 Collecte RSS: https://pycoders.com/feed
+2026-01-21 12:08:09,486 | news_collector | INFO | ✅ RSS: 3 articles collectés
+2026-01-21 12:08:09,487 | news_collector | INFO | 🔄 Collecte Wikipedia...
+2026-01-21 12:08:09,487 | wikipediaapi | INFO | Wikipedia: language=en, user_agent: Mozilla/5.0 (compatible; NewsCollector/1.0; wikipedia-api) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=ExtractFormat.WIKI
+2026-01-21 12:08:09,487 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Natural Language Processing&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:08:09,721 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Natural language processing&explaintext=1&exsectionformat=wiki
+2026-01-21 12:08:09,965 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Deep Learning&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:08:10,166 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Deep learning&explaintext=1&exsectionformat=wiki
+2026-01-21 12:08:10,584 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Machine Learning&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:08:10,797 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Machine learning&explaintext=1&exsectionformat=wiki
+2026-01-21 12:08:11,141 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Artificial Intelligence&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:08:11,345 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Artificial intelligence&explaintext=1&exsectionformat=wiki
+2026-01-21 12:08:11,692 | news_collector | INFO | ✅ Wikipedia: 4 articles collectés
+2026-01-21 12:08:11,692 | news_collector | INFO | ======================================================================
+2026-01-21 12:08:11,693 | news_collector | INFO | 📊 RÉSUMÉ COLLECTE
+2026-01-21 12:08:11,693 | news_collector | INFO |    Total articles : 307
+2026-01-21 12:08:11,693 | news_collector | INFO |    Total erreurs : 0
+2026-01-21 12:08:11,693 | news_collector | INFO | ======================================================================
+2026-01-21 12:08:11,698 | news_collector | INFO | ✅ Articles sauvegardés: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\data\articles_raw.jsonl
+2026-01-21 12:08:11,698 | news_collector | INFO | ✅ Erreurs sauvegardées: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\data\collection_errors.json
+2026-01-21 12:08:11,699 | __main__ | INFO | ✅ ÉTAPE 1 COMPLÉTÉE : 307 articles collectés
+2026-01-21 12:08:11,699 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:08:11,700 | __main__ | INFO | ÉTAPE 2 : PRÉTRAITEMENT NLP
+2026-01-21 12:08:11,700 | __main__ | INFO | ===========================================================================
+2026-01-21 12:08:12,050 | text_preprocessor | INFO | ✅ Modèle spaCy chargé: en_core_web_sm
+2026-01-21 12:08:12,051 | text_preprocessor | INFO | 🔧 Preprocessing 307 articles...
+2026-01-21 12:08:12,234 | text_preprocessor | INFO |   ✓ 20/307 articles
+2026-01-21 12:08:12,418 | text_preprocessor | INFO |   ✓ 40/307 articles
+2026-01-21 12:08:12,591 | text_preprocessor | INFO |   ✓ 60/307 articles
+2026-01-21 12:08:12,766 | text_preprocessor | INFO |   ✓ 80/307 articles
+2026-01-21 12:08:12,983 | text_preprocessor | INFO |   ✓ 100/307 articles
+2026-01-21 12:08:13,158 | text_preprocessor | INFO |   ✓ 120/307 articles
+2026-01-21 12:08:13,330 | text_preprocessor | INFO |   ✓ 140/307 articles
+2026-01-21 12:08:13,515 | text_preprocessor | INFO |   ✓ 160/307 articles
+2026-01-21 12:08:13,702 | text_preprocessor | INFO |   ✓ 180/307 articles
+2026-01-21 12:08:13,870 | text_preprocessor | INFO |   ✓ 200/307 articles
+2026-01-21 12:08:14,038 | text_preprocessor | INFO |   ✓ 220/307 articles
+2026-01-21 12:08:14,216 | text_preprocessor | INFO |   ✓ 240/307 articles
+2026-01-21 12:08:14,399 | text_preprocessor | INFO |   ✓ 260/307 articles
+2026-01-21 12:08:14,587 | text_preprocessor | INFO |   ✓ 280/307 articles
+2026-01-21 12:08:14,765 | text_preprocessor | INFO |   ✓ 300/307 articles
+2026-01-21 12:08:16,175 | text_preprocessor | INFO | ✅ Preprocessing terminé: 307 articles
+2026-01-21 12:08:16,179 | __main__ | INFO | ✅ ÉTAPE 2 COMPLÉTÉE : 307 articles traités
+2026-01-21 12:08:16,182 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:08:16,182 | __main__ | INFO | ÉTAPE 3 : CLASSIFICATION & EXTRACTION
+2026-01-21 12:08:16,182 | __main__ | INFO | ===========================================================================
+2026-01-21 12:08:16,183 | news_classifier | INFO | 📥 Chargement modèle: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli...
+2026-01-21 12:08:17,047 | news_classifier | INFO | ✅ Modèle chargé: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
+2026-01-21 12:08:19,184 | news_classifier | INFO | ✅ Sentiment classifier chargé
+2026-01-21 12:08:19,184 | news_classifier | INFO | 🤖 Classification 307 articles...
+2026-01-21 12:08:22,229 | news_classifier | INFO |   ✓ 10/307 articles
+2026-01-21 12:08:25,060 | news_classifier | INFO |   ✓ 20/307 articles
+2026-01-21 12:08:27,722 | news_classifier | INFO |   ✓ 30/307 articles
+2026-01-21 12:08:30,657 | news_classifier | INFO |   ✓ 40/307 articles
+2026-01-21 12:08:33,659 | news_classifier | INFO |   ✓ 50/307 articles
+2026-01-21 12:08:36,643 | news_classifier | INFO |   ✓ 60/307 articles
+2026-01-21 12:08:39,480 | news_classifier | INFO |   ✓ 70/307 articles
+2026-01-21 12:08:42,260 | news_classifier | INFO |   ✓ 80/307 articles
+2026-01-21 12:08:45,153 | news_classifier | INFO |   ✓ 90/307 articles
+2026-01-21 12:08:48,112 | news_classifier | INFO |   ✓ 100/307 articles
+2026-01-21 12:08:50,958 | news_classifier | INFO |   ✓ 110/307 articles
+2026-01-21 12:08:53,866 | news_classifier | INFO |   ✓ 120/307 articles
+2026-01-21 12:08:56,796 | news_classifier | INFO |   ✓ 130/307 articles
+2026-01-21 12:08:59,689 | news_classifier | INFO |   ✓ 140/307 articles
+2026-01-21 12:09:02,667 | news_classifier | INFO |   ✓ 150/307 articles
+2026-01-21 12:09:05,555 | news_classifier | INFO |   ✓ 160/307 articles
+2026-01-21 12:09:08,499 | news_classifier | INFO |   ✓ 170/307 articles
+2026-01-21 12:09:11,414 | news_classifier | INFO |   ✓ 180/307 articles
+2026-01-21 12:09:14,289 | news_classifier | INFO |   ✓ 190/307 articles
+2026-01-21 12:09:17,140 | news_classifier | INFO |   ✓ 200/307 articles
+2026-01-21 12:09:20,018 | news_classifier | INFO |   ✓ 210/307 articles
+2026-01-21 12:09:22,948 | news_classifier | INFO |   ✓ 220/307 articles
+2026-01-21 12:09:25,903 | news_classifier | INFO |   ✓ 230/307 articles
+2026-01-21 12:09:28,846 | news_classifier | INFO |   ✓ 240/307 articles
+2026-01-21 12:09:32,122 | news_classifier | INFO |   ✓ 250/307 articles
+2026-01-21 12:09:35,091 | news_classifier | INFO |   ✓ 260/307 articles
+2026-01-21 12:09:38,247 | news_classifier | INFO |   ✓ 270/307 articles
+2026-01-21 12:09:41,683 | news_classifier | INFO |   ✓ 280/307 articles
+2026-01-21 12:09:44,778 | news_classifier | INFO |   ✓ 290/307 articles
+2026-01-21 12:09:47,686 | news_classifier | INFO |   ✓ 300/307 articles
+2026-01-21 12:09:57,775 | news_classifier | INFO | 🔍 Duplicate detection (threshold=0.8)...
+2026-01-21 12:09:57,798 | news_classifier | INFO | ✅ Duplicate detection: 2 doublons trouvés
+2026-01-21 12:09:57,799 | news_classifier | INFO | ✅ Classification terminée: 307 articles
+2026-01-21 12:09:57,806 | __main__ | INFO | ✅ ÉTAPE 3 COMPLÉTÉE : 307 articles classifiés
+2026-01-21 12:09:58,130 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:09:58,131 | __main__ | INFO | ÉTAPE 4 : GÉNÉRATION RAPPORT
+2026-01-21 12:09:58,131 | __main__ | INFO | ===========================================================================
+2026-01-21 12:09:58,131 | report_generator | INFO | 📝 Génération rapport...
+2026-01-21 12:09:58,131 | report_generator | INFO | 📈 Extraction trending topics...
+2026-01-21 12:09:58,132 | report_generator | INFO | ✅ 3 trending topics trouvés
+2026-01-21 12:09:58,132 | report_generator | INFO | ✨ Extraction must-read articles...
+2026-01-21 12:09:58,132 | report_generator | INFO | ✅ 5 must-read articles sélectionnés
+2026-01-21 12:09:58,133 | report_generator | INFO | 📊 Analyse thématique...
+2026-01-21 12:09:58,134 | report_generator | INFO | 😊 Analyse sentiments...
+2026-01-21 12:09:58,135 | report_generator | INFO | ✅ Rapport sauvegardé: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\output\veille_report.txt
+2026-01-21 12:09:58,135 | __main__ | INFO | ✅ ÉTAPE 4 COMPLÉTÉE : Rapport sauvegardé
+2026-01-21 12:09:58,135 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:09:58,135 | __main__ | INFO | ✅ PIPELINE COMPLET - SUCCÈS
+2026-01-21 12:09:58,135 | __main__ | INFO | ===========================================================================
+2026-01-21 12:09:58,136 | __main__ | INFO | Rapport généré: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\output\veille_report.txt
+2026-01-21 12:09:58,136 | __main__ | INFO | Articles traités: 307
+2026-01-21 12:09:58,136 | __main__ | INFO | Temps total: 12:09:58
+2026-01-21 12:09:58,136 | __main__ | INFO | ===========================================================================
+2026-01-21 14:55:00,330 | __main__ | INFO | 🚀 Pipeline Veille NLP - Démarrage
+2026-01-21 14:55:00,330 | __main__ | INFO | Configuration chargée depuis: config.json
+2026-01-21 14:55:00,330 | __main__ | INFO | 
+===========================================================================
+2026-01-21 14:55:00,331 | __main__ | INFO | ÉTAPE 1 : COLLECTE ARTICLES
+2026-01-21 14:55:00,331 | __main__ | INFO | ===========================================================================
+2026-01-21 14:55:00,331 | news_collector | INFO | ======================================================================
+2026-01-21 14:55:00,331 | news_collector | INFO | 📥 COLLECTE ARTICLES - Début
+2026-01-21 14:55:00,331 | news_collector | INFO | ======================================================================
+2026-01-21 14:55:00,331 | news_collector | INFO | 🔄 Collecte HackerNews...
+2026-01-21 14:55:00,331 | news_collector | INFO |   Scraping page 1/10
+2026-01-21 14:55:03,095 | news_collector | INFO |   Scraping page 2/10
+2026-01-21 14:55:05,307 | news_collector | INFO |   Scraping page 3/10
+2026-01-21 14:55:07,519 | news_collector | INFO |   Scraping page 4/10
+2026-01-21 14:55:09,729 | news_collector | INFO |   Scraping page 5/10
+2026-01-21 14:55:11,937 | news_collector | INFO |   Scraping page 6/10
+2026-01-21 14:55:14,147 | news_collector | INFO |   Scraping page 7/10
+2026-01-21 14:55:16,353 | news_collector | INFO |   Scraping page 8/10
+2026-01-21 14:55:18,574 | news_collector | INFO |   Scraping page 9/10
+2026-01-21 14:55:20,799 | news_collector | INFO |   Scraping page 10/10
+2026-01-21 14:55:23,012 | news_collector | INFO | ✅ HackerNews: 300 articles collectés
+2026-01-21 14:55:23,012 | news_collector | INFO | 🔄 Collecte RSS: https://pycoders.com/feed
+2026-01-21 14:55:23,448 | news_collector | INFO | ✅ RSS: 3 articles collectés
+2026-01-21 14:55:23,448 | news_collector | INFO | 🔄 Collecte Wikipedia...
+2026-01-21 14:55:23,448 | wikipediaapi | INFO | Wikipedia: language=en, user_agent: Mozilla/5.0 (compatible; NewsCollector/1.0; wikipedia-api) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=ExtractFormat.WIKI
+2026-01-21 14:55:23,448 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Natural Language Processing&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 14:55:23,693 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Natural language processing&explaintext=1&exsectionformat=wiki
+2026-01-21 14:55:23,940 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Deep Learning&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 14:55:24,230 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Deep learning&explaintext=1&exsectionformat=wiki
+2026-01-21 14:55:24,385 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Machine Learning&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 14:55:24,609 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Machine learning&explaintext=1&exsectionformat=wiki
+2026-01-21 14:55:24,941 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Artificial Intelligence&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 14:55:25,480 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Artificial intelligence&explaintext=1&exsectionformat=wiki
+2026-01-21 14:55:26,686 | news_collector | INFO | ✅ Wikipedia: 4 articles collectés
+2026-01-21 14:55:26,686 | news_collector | INFO | ======================================================================
+2026-01-21 14:55:26,686 | news_collector | INFO | 📊 RÉSUMÉ COLLECTE
+2026-01-21 14:55:26,686 | news_collector | INFO |    Total articles : 307
+2026-01-21 14:55:26,687 | news_collector | INFO |    Total erreurs : 0
+2026-01-21 14:55:26,687 | news_collector | INFO | ======================================================================
+2026-01-21 14:55:26,692 | news_collector | INFO | ✅ Articles sauvegardés: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\data\articles_raw.jsonl
+2026-01-21 14:55:26,692 | news_collector | INFO | ✅ Erreurs sauvegardées: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\data\collection_errors.json
+2026-01-21 14:55:26,692 | __main__ | INFO | ✅ ÉTAPE 1 COMPLÉTÉE : 307 articles collectés
+2026-01-21 14:55:26,693 | __main__ | INFO | 
+===========================================================================
+2026-01-21 14:55:26,693 | __main__ | INFO | ÉTAPE 2 : PRÉTRAITEMENT NLP
+2026-01-21 14:55:26,693 | __main__ | INFO | ===========================================================================
+2026-01-21 14:55:27,039 | text_preprocessor | INFO | ✅ Modèle spaCy chargé: en_core_web_sm
+2026-01-21 14:55:27,040 | text_preprocessor | INFO | 🔧 Preprocessing 307 articles...
+2026-01-21 14:55:27,214 | text_preprocessor | INFO |   ✓ 20/307 articles
+2026-01-21 14:55:27,377 | text_preprocessor | INFO |   ✓ 40/307 articles
+2026-01-21 14:55:27,544 | text_preprocessor | INFO |   ✓ 60/307 articles
+2026-01-21 14:55:27,723 | text_preprocessor | INFO |   ✓ 80/307 articles
+2026-01-21 14:55:27,911 | text_preprocessor | INFO |   ✓ 100/307 articles
+2026-01-21 14:55:28,121 | text_preprocessor | INFO |   ✓ 120/307 articles
+2026-01-21 14:55:28,282 | text_preprocessor | INFO |   ✓ 140/307 articles
+2026-01-21 14:55:28,454 | text_preprocessor | INFO |   ✓ 160/307 articles
+2026-01-21 14:55:28,643 | text_preprocessor | INFO |   ✓ 180/307 articles
+2026-01-21 14:55:28,812 | text_preprocessor | INFO |   ✓ 200/307 articles
+2026-01-21 14:55:28,978 | text_preprocessor | INFO |   ✓ 220/307 articles
+2026-01-21 14:55:29,150 | text_preprocessor | INFO |   ✓ 240/307 articles
+2026-01-21 14:55:29,327 | text_preprocessor | INFO |   ✓ 260/307 articles
+2026-01-21 14:55:29,499 | text_preprocessor | INFO |   ✓ 280/307 articles
+2026-01-21 14:55:29,676 | text_preprocessor | INFO |   ✓ 300/307 articles
+2026-01-21 14:55:31,091 | text_preprocessor | INFO | ✅ Preprocessing terminé: 307 articles
+2026-01-21 14:55:31,094 | __main__ | INFO | ✅ ÉTAPE 2 COMPLÉTÉE : 307 articles traités
+2026-01-21 14:55:31,099 | __main__ | INFO | 
+===========================================================================
+2026-01-21 14:55:31,099 | __main__ | INFO | ÉTAPE 3 : CLASSIFICATION & EXTRACTION
+2026-01-21 14:55:31,099 | __main__ | INFO | ===========================================================================
+2026-01-21 14:55:31,099 | news_classifier | INFO | 📥 Chargement modèle: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli...
+2026-01-21 14:55:32,118 | news_classifier | INFO | ✅ Modèle chargé: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
+2026-01-21 14:55:34,266 | news_classifier | INFO | ✅ Sentiment classifier chargé
+2026-01-21 14:55:34,267 | news_classifier | INFO | 🤖 Classification 307 articles...
+2026-01-21 14:55:37,099 | news_classifier | INFO |   ✓ 10/307 articles
+2026-01-21 14:55:39,947 | news_classifier | INFO |   ✓ 20/307 articles
+2026-01-21 14:55:42,670 | news_classifier | INFO |   ✓ 30/307 articles
+2026-01-21 14:55:45,476 | news_classifier | INFO |   ✓ 40/307 articles
+2026-01-21 14:55:48,311 | news_classifier | INFO |   ✓ 50/307 articles
+2026-01-21 14:55:51,160 | news_classifier | INFO |   ✓ 60/307 articles
+2026-01-21 14:55:54,047 | news_classifier | INFO |   ✓ 70/307 articles
+2026-01-21 14:55:56,940 | news_classifier | INFO |   ✓ 80/307 articles
+2026-01-21 14:55:59,915 | news_classifier | INFO |   ✓ 90/307 articles
+2026-01-21 14:56:02,859 | news_classifier | INFO |   ✓ 100/307 articles
+2026-01-21 14:56:05,930 | news_classifier | INFO |   ✓ 110/307 articles
+2026-01-21 14:56:08,865 | news_classifier | INFO |   ✓ 120/307 articles
+2026-01-21 14:56:11,976 | news_classifier | INFO |   ✓ 130/307 articles
+2026-01-21 14:56:14,913 | news_classifier | INFO |   ✓ 140/307 articles
+2026-01-21 14:56:17,827 | news_classifier | INFO |   ✓ 150/307 articles
+2026-01-21 14:56:20,733 | news_classifier | INFO |   ✓ 160/307 articles
+2026-01-21 14:56:23,652 | news_classifier | INFO |   ✓ 170/307 articles
+2026-01-21 14:56:26,650 | news_classifier | INFO |   ✓ 180/307 articles
+2026-01-21 14:56:29,598 | news_classifier | INFO |   ✓ 190/307 articles
+2026-01-21 14:56:32,537 | news_classifier | INFO |   ✓ 200/307 articles
+2026-01-21 14:56:35,312 | news_classifier | INFO |   ✓ 210/307 articles
+2026-01-21 14:56:38,362 | news_classifier | INFO |   ✓ 220/307 articles
+2026-01-21 14:56:41,295 | news_classifier | INFO |   ✓ 230/307 articles
+2026-01-21 14:56:44,272 | news_classifier | INFO |   ✓ 240/307 articles
+2026-01-21 14:56:47,228 | news_classifier | INFO |   ✓ 250/307 articles
+2026-01-21 14:56:50,304 | news_classifier | INFO |   ✓ 260/307 articles
+2026-01-21 14:56:53,257 | news_classifier | INFO |   ✓ 270/307 articles
+2026-01-21 14:56:56,227 | news_classifier | INFO |   ✓ 280/307 articles
+2026-01-21 14:56:59,303 | news_classifier | INFO |   ✓ 290/307 articles
+2026-01-21 14:57:02,241 | news_classifier | INFO |   ✓ 300/307 articles
+2026-01-21 14:57:14,292 | news_classifier | INFO | 🔍 Duplicate detection (threshold=0.8)...
+2026-01-21 14:57:14,314 | news_classifier | INFO | ✅ Duplicate detection: 2 doublons trouvés
+2026-01-21 14:57:14,314 | news_classifier | INFO | ✅ Classification terminée: 307 articles
+2026-01-21 14:57:14,320 | __main__ | INFO | ✅ ÉTAPE 3 COMPLÉTÉE : 307 articles classifiés
+2026-01-21 14:57:14,651 | __main__ | INFO | 
+===========================================================================
+2026-01-21 14:57:14,651 | __main__ | INFO | ÉTAPE 4 : GÉNÉRATION RAPPORT
+2026-01-21 14:57:14,652 | __main__ | INFO | ===========================================================================
+2026-01-21 14:57:14,652 | report_generator | INFO | 📝 Génération rapport...
+2026-01-21 14:57:14,652 | report_generator | INFO | 📈 Extraction trending topics...
+2026-01-21 14:57:14,652 | report_generator | INFO | ✅ 3 trending topics trouvés
+2026-01-21 14:57:14,652 | report_generator | INFO | ✨ Extraction must-read articles...
+2026-01-21 14:57:14,652 | report_generator | INFO | ✅ 5 must-read articles sélectionnés
+2026-01-21 14:57:14,653 | report_generator | INFO | 📊 Analyse thématique...
+2026-01-21 14:57:14,654 | report_generator | INFO | 😊 Analyse sentiments...
+2026-01-21 14:57:14,655 | report_generator | INFO | ✅ Rapport sauvegardé: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\output\veille_report.txt
+2026-01-21 14:57:14,655 | __main__ | INFO | ✅ ÉTAPE 4 COMPLÉTÉE : Rapport sauvegardé
+2026-01-21 14:57:14,655 | __main__ | INFO | 
+===========================================================================
+2026-01-21 14:57:14,655 | __main__ | INFO | ✅ PIPELINE COMPLET - SUCCÈS
+2026-01-21 14:57:14,655 | __main__ | INFO | ===========================================================================
+2026-01-21 14:57:14,655 | __main__ | INFO | Rapport généré: C:\Users\mathi\OneDrive - Université Clermont Auvergne\Bureau\M2-IA\langage-naturel\Formation_NLP_project_baseline-main\baseline_project\output\veille_report.txt
+2026-01-21 14:57:14,655 | __main__ | INFO | Articles traités: 307
+2026-01-21 14:57:14,656 | __main__ | INFO | Temps total: 14:57:14
+2026-01-21 14:57:14,656 | __main__ | INFO | ===========================================================================
