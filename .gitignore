@@ -7,3 +7,5 @@ baseline_project/data/*.jsonl
 baseline_project/data/*.json
 baseline_project/output/*.txt
 *.log
+
+baseline_project/veille_system.log
