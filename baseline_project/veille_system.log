@@ -1992,3 +1992,133 @@ OSError: [E050] Can't find model 'en_core_web_sm'. It doesn't seem to be a Pytho
 2026-01-20 16:52:08,511 | news_classifier | INFO |   ✓ 90/307 articles
 2026-01-20 16:52:35,424 | news_classifier | INFO |   ✓ 100/307 articles
 2026-01-20 16:53:03,467 | news_classifier | INFO |   ✓ 110/307 articles
+2026-01-21 12:09:03,851 | __main__ | INFO | 🚀 Pipeline Veille NLP - Démarrage
+2026-01-21 12:09:03,852 | __main__ | INFO | Configuration chargée depuis: config.json
+2026-01-21 12:09:03,852 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:09:03,853 | __main__ | INFO | ÉTAPE 1 : COLLECTE ARTICLES
+2026-01-21 12:09:03,853 | __main__ | INFO | ===========================================================================
+2026-01-21 12:09:03,854 | news_collector | INFO | ======================================================================
+2026-01-21 12:09:03,854 | news_collector | INFO | 📥 COLLECTE ARTICLES - Début
+2026-01-21 12:09:03,854 | news_collector | INFO | ======================================================================
+2026-01-21 12:09:03,855 | news_collector | INFO | 🔄 Collecte HackerNews...
+2026-01-21 12:09:03,855 | news_collector | INFO |   Scraping page 1/10
+2026-01-21 12:09:06,968 | news_collector | INFO |   Scraping page 2/10
+2026-01-21 12:09:09,298 | news_collector | INFO |   Scraping page 3/10
+2026-01-21 12:09:11,568 | news_collector | INFO |   Scraping page 4/10
+2026-01-21 12:09:13,807 | news_collector | INFO |   Scraping page 5/10
+2026-01-21 12:09:16,062 | news_collector | INFO |   Scraping page 6/10
+2026-01-21 12:09:18,282 | news_collector | INFO |   Scraping page 7/10
+2026-01-21 12:09:20,510 | news_collector | INFO |   Scraping page 8/10
+2026-01-21 12:09:22,759 | news_collector | INFO |   Scraping page 9/10
+2026-01-21 12:09:25,001 | news_collector | INFO |   Scraping page 10/10
+2026-01-21 12:09:27,260 | news_collector | INFO | ✅ HackerNews: 300 articles collectés
+2026-01-21 12:09:27,262 | news_collector | INFO | 🔄 Collecte RSS: https://pycoders.com/feed
+2026-01-21 12:09:28,041 | news_collector | INFO | ✅ RSS: 3 articles collectés
+2026-01-21 12:09:28,042 | news_collector | INFO | 🔄 Collecte Wikipedia...
+2026-01-21 12:09:28,042 | wikipediaapi | INFO | Wikipedia: language=en, user_agent: Mozilla/5.0 (compatible; NewsCollector/1.0; wikipedia-api) (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=ExtractFormat.WIKI
+2026-01-21 12:09:28,042 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Natural Language Processing&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:09:28,587 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Natural language processing&explaintext=1&exsectionformat=wiki
+2026-01-21 12:09:28,827 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Deep Learning&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:09:29,164 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Deep learning&explaintext=1&exsectionformat=wiki
+2026-01-21 12:09:29,510 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Machine Learning&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:09:29,705 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Machine learning&explaintext=1&exsectionformat=wiki
+2026-01-21 12:09:30,047 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Artificial Intelligence&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2026-01-21 12:09:30,250 | wikipediaapi | INFO | Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Artificial intelligence&explaintext=1&exsectionformat=wiki
+2026-01-21 12:09:30,604 | news_collector | INFO | ✅ Wikipedia: 4 articles collectés
+2026-01-21 12:09:30,608 | news_collector | INFO | ======================================================================
+2026-01-21 12:09:30,608 | news_collector | INFO | 📊 RÉSUMÉ COLLECTE
+2026-01-21 12:09:30,609 | news_collector | INFO |    Total articles : 307
+2026-01-21 12:09:30,609 | news_collector | INFO |    Total erreurs : 0
+2026-01-21 12:09:30,610 | news_collector | INFO | ======================================================================
+2026-01-21 12:09:30,631 | news_collector | INFO | ✅ Articles sauvegardés: C:\Users\rojas\Documents\CoursHexagone\ANNEE_2026\NLP\Formation_NLP_project_baseline-main\Formation_NLP_project_baseline-main\baseline_project\data\articles_raw.jsonl
+2026-01-21 12:09:30,632 | news_collector | INFO | ✅ Erreurs sauvegardées: C:\Users\rojas\Documents\CoursHexagone\ANNEE_2026\NLP\Formation_NLP_project_baseline-main\Formation_NLP_project_baseline-main\baseline_project\data\collection_errors.json
+2026-01-21 12:09:30,633 | __main__ | INFO | ✅ ÉTAPE 1 COMPLÉTÉE : 307 articles collectés
+2026-01-21 12:09:30,634 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:09:30,634 | __main__ | INFO | ÉTAPE 2 : PRÉTRAITEMENT NLP
+2026-01-21 12:09:30,635 | __main__ | INFO | ===========================================================================
+2026-01-21 12:09:31,151 | text_preprocessor | INFO | ✅ Modèle spaCy chargé: en_core_web_sm
+2026-01-21 12:09:31,151 | text_preprocessor | INFO | 🔧 Preprocessing 307 articles...
+2026-01-21 12:09:31,365 | text_preprocessor | INFO |   ✓ 20/307 articles
+2026-01-21 12:09:31,560 | text_preprocessor | INFO |   ✓ 40/307 articles
+2026-01-21 12:09:31,758 | text_preprocessor | INFO |   ✓ 60/307 articles
+2026-01-21 12:09:31,950 | text_preprocessor | INFO |   ✓ 80/307 articles
+2026-01-21 12:09:32,132 | text_preprocessor | INFO |   ✓ 100/307 articles
+2026-01-21 12:09:32,309 | text_preprocessor | INFO |   ✓ 120/307 articles
+2026-01-21 12:09:32,482 | text_preprocessor | INFO |   ✓ 140/307 articles
+2026-01-21 12:09:32,682 | text_preprocessor | INFO |   ✓ 160/307 articles
+2026-01-21 12:09:32,878 | text_preprocessor | INFO |   ✓ 180/307 articles
+2026-01-21 12:09:33,065 | text_preprocessor | INFO |   ✓ 200/307 articles
+2026-01-21 12:09:33,242 | text_preprocessor | INFO |   ✓ 220/307 articles
+2026-01-21 12:09:33,416 | text_preprocessor | INFO |   ✓ 240/307 articles
+2026-01-21 12:09:33,605 | text_preprocessor | INFO |   ✓ 260/307 articles
+2026-01-21 12:09:33,791 | text_preprocessor | INFO |   ✓ 280/307 articles
+2026-01-21 12:09:33,966 | text_preprocessor | INFO |   ✓ 300/307 articles
+2026-01-21 12:09:34,851 | text_preprocessor | INFO | ✅ Preprocessing terminé: 307 articles
+2026-01-21 12:09:34,856 | __main__ | INFO | ✅ ÉTAPE 2 COMPLÉTÉE : 307 articles traités
+2026-01-21 12:09:34,859 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:09:34,859 | __main__ | INFO | ÉTAPE 3 : CLASSIFICATION & EXTRACTION
+2026-01-21 12:09:34,859 | __main__ | INFO | ===========================================================================
+2026-01-21 12:09:34,861 | news_classifier | INFO | 📥 Chargement modèle: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli...
+2026-01-21 12:09:37,690 | news_classifier | INFO | ✅ Modèle chargé: MoritzLaurer/mDeBERTa-v3-base-mnli-xnli
+2026-01-21 12:09:38,260 | huggingface_hub.file_download | WARNING | Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-01-21 12:10:54,397 | huggingface_hub.file_download | WARNING | Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-01-21 12:10:58,029 | news_classifier | INFO | ✅ Sentiment classifier chargé
+2026-01-21 12:10:58,030 | news_classifier | INFO | 🤖 Classification 307 articles...
+2026-01-21 12:11:02,769 | news_classifier | INFO |   ✓ 10/307 articles
+2026-01-21 12:11:06,876 | news_classifier | INFO |   ✓ 20/307 articles
+2026-01-21 12:11:10,830 | news_classifier | INFO |   ✓ 30/307 articles
+2026-01-21 12:11:14,903 | news_classifier | INFO |   ✓ 40/307 articles
+2026-01-21 12:11:18,891 | news_classifier | INFO |   ✓ 50/307 articles
+2026-01-21 12:11:22,975 | news_classifier | INFO |   ✓ 60/307 articles
+2026-01-21 12:11:27,120 | news_classifier | INFO |   ✓ 70/307 articles
+2026-01-21 12:11:31,148 | news_classifier | INFO |   ✓ 80/307 articles
+2026-01-21 12:11:35,311 | news_classifier | INFO |   ✓ 90/307 articles
+2026-01-21 12:11:39,431 | news_classifier | INFO |   ✓ 100/307 articles
+2026-01-21 12:11:43,470 | news_classifier | INFO |   ✓ 110/307 articles
+2026-01-21 12:11:47,696 | news_classifier | INFO |   ✓ 120/307 articles
+2026-01-21 12:11:51,850 | news_classifier | INFO |   ✓ 130/307 articles
+2026-01-21 12:11:55,938 | news_classifier | INFO |   ✓ 140/307 articles
+2026-01-21 12:12:00,115 | news_classifier | INFO |   ✓ 150/307 articles
+2026-01-21 12:12:07,589 | news_classifier | INFO |   ✓ 160/307 articles
+2026-01-21 12:12:16,691 | news_classifier | INFO |   ✓ 170/307 articles
+2026-01-21 12:12:25,929 | news_classifier | INFO |   ✓ 180/307 articles
+2026-01-21 12:12:35,324 | news_classifier | INFO |   ✓ 190/307 articles
+2026-01-21 12:12:44,554 | news_classifier | INFO |   ✓ 200/307 articles
+2026-01-21 12:12:52,144 | news_classifier | INFO |   ✓ 210/307 articles
+2026-01-21 12:12:56,267 | news_classifier | INFO |   ✓ 220/307 articles
+2026-01-21 12:13:00,476 | news_classifier | INFO |   ✓ 230/307 articles
+2026-01-21 12:13:09,145 | news_classifier | INFO |   ✓ 240/307 articles
+2026-01-21 12:13:19,484 | news_classifier | INFO |   ✓ 250/307 articles
+2026-01-21 12:13:29,696 | news_classifier | INFO |   ✓ 260/307 articles
+2026-01-21 12:13:36,520 | news_classifier | INFO |   ✓ 270/307 articles
+2026-01-21 12:13:40,724 | news_classifier | INFO |   ✓ 280/307 articles
+2026-01-21 12:13:44,810 | news_classifier | INFO |   ✓ 290/307 articles
+2026-01-21 12:13:48,943 | news_classifier | INFO |   ✓ 300/307 articles
+2026-01-21 12:14:01,650 | news_classifier | INFO | 🔍 Duplicate detection (threshold=0.85)...
+2026-01-21 12:14:01,673 | news_classifier | INFO | ✅ Duplicate detection: 0 doublons trouvés
+2026-01-21 12:14:01,674 | news_classifier | INFO | ✅ Classification terminée: 307 articles
+2026-01-21 12:14:01,699 | __main__ | INFO | ✅ ÉTAPE 3 COMPLÉTÉE : 307 articles classifiés
+2026-01-21 12:14:01,964 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:14:01,965 | __main__ | INFO | ÉTAPE 4 : GÉNÉRATION RAPPORT
+2026-01-21 12:14:01,965 | __main__ | INFO | ===========================================================================
+2026-01-21 12:14:01,965 | report_generator | INFO | 📝 Génération rapport...
+2026-01-21 12:14:01,965 | report_generator | INFO | 📈 Extraction trending topics...
+2026-01-21 12:14:01,966 | report_generator | INFO | ✅ 3 trending topics trouvés
+2026-01-21 12:14:01,966 | report_generator | INFO | ✨ Extraction must-read articles...
+2026-01-21 12:14:01,967 | report_generator | INFO | ✅ 5 must-read articles sélectionnés
+2026-01-21 12:14:01,968 | report_generator | INFO | 📊 Analyse thématique...
+2026-01-21 12:14:01,969 | report_generator | INFO | 😊 Analyse sentiments...
+2026-01-21 12:14:01,970 | report_generator | INFO | ✅ Rapport sauvegardé: C:\Users\rojas\Documents\CoursHexagone\ANNEE_2026\NLP\Formation_NLP_project_baseline-main\Formation_NLP_project_baseline-main\baseline_project\output\veille_report.txt
+2026-01-21 12:14:01,970 | __main__ | INFO | ✅ ÉTAPE 4 COMPLÉTÉE : Rapport sauvegardé
+2026-01-21 12:14:01,970 | __main__ | INFO | 
+===========================================================================
+2026-01-21 12:14:01,971 | __main__ | INFO | ✅ PIPELINE COMPLET - SUCCÈS
+2026-01-21 12:14:01,971 | __main__ | INFO | ===========================================================================
+2026-01-21 12:14:01,971 | __main__ | INFO | Rapport généré: C:\Users\rojas\Documents\CoursHexagone\ANNEE_2026\NLP\Formation_NLP_project_baseline-main\Formation_NLP_project_baseline-main\baseline_project\output\veille_report.txt
+2026-01-21 12:14:01,972 | __main__ | INFO | Articles traités: 307
+2026-01-21 12:14:01,972 | __main__ | INFO | Temps total: 12:14:01
+2026-01-21 12:14:01,972 | __main__ | INFO | ===========================================================================
